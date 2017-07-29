@@ -1,0 +1,268 @@
+<div class="banner row">
+  <h2>Which Companies Deserve Your Money?</h2>
+
+  <form method="post" action="home-nav">
+    <select class="dropdown-field" name="nav">
+      <option value="default" class="dropdown-default">Select Industry...</option>
+      <option value="power">Power</option>
+      <option value="super">Superannuation</option>
+    </select>
+
+    <input type="submit" name="power-submit" id="power-submit" class="yellow-button-input" value="Find Out Now" onClick="return val();">
+  </form>
+</div>
+
+<div class="col-sm-6 col-sm-offset-3 tac">
+  <h2>Make an Ethical Switch</h2>
+
+  <p><b>Having a positive effect on the world can be as simple as switching your spending to the right company</b></p>
+
+  <p>We would all rather that the money we spent didn't cause any harm but it can be tricky to know which companies are the bad ones and which are the good.</p>
+
+  <p><strong>This is why we exist</strong></p>	
+
+  <p>We are a new social enterprise whose mission is to find ethical companies offering great deals and to make it simple for people to switch across to them. By finding affordable deals from ethical companies, the choice is each of ours to make. So are you up for making an Ethical Switch</p> 
+
+  <p>We promise you, <strong>switching never felt better</strong></p>	
+</div>
+
+<div class="clb"></div>
+
+<div class="row tac">
+  <div class="col-sm-6">
+    Switch your super
+  </div>
+  
+  <div class="col-sm-6">
+    Switch your power provider
+  </div>
+</div>
+
+<div class="col-sm-10 col-sm-offset-1 tac">
+  <h2>Our Philosophy</h2>
+
+  <div class="col-sm-4">
+    <div class="philosophy-box-icon">
+      <%= image_tag "icon_philosophy_positive.png", class: "w80p" %>
+    </div>
+
+    <div class="philosophy-box-text">
+      We believe the money you spend every day can have a <strong>positive effect</strong>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="philosophy-box-icon">
+      <%= image_tag "icon_philosophy_harm.png", class: "w80p" %>
+    </div>
+
+    <div class="philosophy-box-text">
+      You have the right to know that your money <strong>isn't doing any harm</strong>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="philosophy-box-icon">
+      <%= image_tag "icon_philosophy_quick.png", class: "w80p" %>
+    </div>
+
+    <div class="philosophy-box-text">
+      Switching to <strong>ethical products</strong> should be <strong>quick, easy and affordable</strong>
+
+    </div>
+  </div>
+
+  <div class="clb"></div>
+</div>
+
+<div class="clb"></div>
+
+<div class="highlight-bg row white-text pt20 pb20 tac">
+  <h3>Sign Up Now for Updates on New Ethical Products and Services!</h3>
+
+  <form action="http://ethicalswitch.us9.list-manage1.com/subscribe/post" method="POST">
+    <input type="hidden" name="u" value="c0e17deb72c96e0658699df5e">
+    <input type="hidden" name="id" value="e5960bf2a5">
+    <input type="email" value="E-Mail Address" name="MERGE0" id="MERGE0" class="text-field">
+    <input type="text" name="MERGE3" id="MERGE3" value="Postcode" class="text-field">
+
+    <input type="submit" value="Submit" class="yellow-button-input">
+  </form>
+</div>
+
+<div class="grey-wrapper">
+  <div id="what-we-do" class="content">
+    <h2>What We Do</h2>
+
+    <div class="what-we-do-box">
+      <div class="what-we-do-box-icon">
+        <img alt="" src="images/what-we-do-icon-1.png" />
+      </div>
+
+      <div class="what-we-do-box-text">
+        We research the companies within certain industries and give them an ethical rating
+      </div>
+    </div>
+
+    <div class="what-we-do-box">
+      <div class="what-we-do-box-icon">
+        <img alt="" src="images/what-we-do-icon-2.png" />
+      </div>
+
+      <div class="what-we-do-box-text">
+        We then compare their prices to find which of them are offering the best value
+      </div>
+    </div>
+
+    <div class="what-we-do-box">
+      <div class="what-we-do-box-icon">
+        <img alt="" src="images/what-we-do-icon-3.png" />
+      </div>
+
+      <div class="what-we-do-box-text">
+        We choose the most ethical companies and offer a quick, online switch
+      </div>
+    </div>
+
+    <div class="what-we-do-box">
+      <div class="what-we-do-box-icon">
+        <img alt="" src="images/what-we-do-icon-4.png" />
+      </div>
+
+      <div class="what-we-do-box-text">
+        When you switch through our website, we donate on your behalf to one of our charity projects!
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sign-up sign-up-desktop">
+  <h3>Sign up now for updates on new ethical products and services!</h3>
+
+  <form action="http://ethicalswitch.us9.list-manage1.com/subscribe/post" method="POST">
+    <input type="hidden" name="u" value="c0e17deb72c96e0658699df5e">
+    <input type="hidden" name="id" value="e5960bf2a5">
+
+    <input type="email" value="E-Mail Address" placeholder="E-Mail Address" name="MERGE0" id="MERGE0" class="text-field">
+
+    <input type="text" name="MERGE3" id="MERGE3" value="Postcode" class="text-field">
+
+    <input type="submit" value="Submit" class="yellow-button-input">
+  </form>
+</div>
+
+<div class="colour-bg-separator">
+  <span class="colour-bg-separator-text">How ethical is your power company?</span>
+
+  <form method="post" action="ethical-power-results">
+    <select class="dropdown-field" name="state">
+      <option value="default" class="dropdown-default">Select a State...</option>
+      <option value="act">ACT</option>
+      <option value="nsw">NSW</option>
+      <!--<option value="nt">NT</option>-->
+      <option value="qld">QLD</option>
+      <option value="sa">SA</option>
+      <option value="tas">TAS</option>
+      <option value="vic">VIC</option>
+      <!--<option value="wa">WA</option>-->
+    </select>
+
+    <input type="submit" name="power-submit" id="power-submit" class="yellow-button-input" value="Find Out Now">
+  </form>
+</div>
+
+<div id="criteria" class="content-unpadded" style="padding-top:40px;">
+  <h2>What Makes an Ethical Company?</h2>
+
+  <p class="criteria">
+    Our criteria for what makes an ethical business varies depending on the industry we are looking at, but most of what we research 
+    comes under one of four headings:
+  </p>
+
+  <div class="criteria-box">
+    <div class="criteria-box-icon">
+      <img alt="" src="images/criteria-icon-1.png" />
+    </div>
+
+    <div class="criteria-box-text">
+      <h3>Environmental Impact</h3>
+
+      <p>
+        Carbon offsetting, paperless billing, investment in renewable energy - we consider anything that has an impact on the environment
+      </p>
+    </div>
+  </div>
+
+  <div class="criteria-box">
+    <div class="criteria-box-icon">
+      <img alt="" src="images/criteria-icon-2.png" />
+    </div>
+
+    <div class="criteria-box-text">
+      <h3>Value for Money</h3>
+
+      <p>
+        Are the prices fair? Are all of the costs transparent? We find you the best deals on products/services that have a positive impact
+      </p>
+    </div>
+  </div>
+
+  <div class="criteria-box">
+    <div class="criteria-box-icon">
+      <img alt="" src="images/criteria-icon-3.png" />
+    </div>
+
+    <div class="criteria-box-text">
+      <h3>Customer Experience</h3>
+
+      <p>
+        Are there hidden fees or lock-in contracts? Are they easy to contact and pleasant to talk to? We value the way a company treats 
+        its customers
+      </p>
+    </div>
+  </div>
+
+  <div class="criteria-box">
+    <div class="criteria-box-icon">
+      <img alt="" src="images/criteria-icon-4.png" />
+    </div>
+
+    <div class="criteria-box-text">
+      <h3>Reputation &amp; Endorsements</h3>
+
+      <p>
+        What are people saying about the companies you buy from? Have they received endorsements from reputable sources? We like to find the 
+        companies that have
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="our-story">
+
+  <div class="our-story-title">
+    <h2>Our Story</h2>
+  </div>
+
+  <div class="our-story-box">
+    <p>
+      Ethical Switch began because we noticed something. No matter how hard we try, the task of consuming ethically is difficult and time-consuming.  Our purpose is to help busy people discover companies that align better with their personal values.
+    </p>
+
+    <p>
+      Through our research, we empower consumers with the information needed to make their ethical choices.  We then provide a simple, online and fast switch.
+    </p>
+
+    <p>
+      Our focus is with core household spending –electricity, superannuation and soon to be released, banking!  Choosing more ethical providers can vastly reduce personal carbon footprints and helps reward companies that are doing better business.
+    </p>
+
+    <p>
+      Unlike other comparison websites, we only offer switches to companies that rate more highly across a range of ethical considerations.  We also made sure that a vast portion of our profits go to our charity partners - every time somebody makes a switch, we donate.
+    </p>
+
+    <p>
+      Based in Melbourne, we were incubated by a group of passionate volunteers in 2014.  The heart of our business is to empower our awesome not-for-profit partners and that’s why we donate over 90% of our profits!
+    </p>
+  </div>
+</div>

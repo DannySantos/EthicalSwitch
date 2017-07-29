@@ -1,0 +1,217 @@
+@media only screen and (max-width: 768px) {
+  .poa-xs {
+    position: absolute !important;
+  }
+
+  .por-xs {
+    position: relative !important;
+  }
+
+  .pof-xs {
+    position: fixed!important;
+  }
+
+  .fl-xs {
+    float:left;
+  }
+
+  .fln-xs {
+    float:none;
+  }
+
+  .fll-xs {
+    float:left;
+  }
+
+  .flr-xs {
+    float:right;
+  }
+
+  .cll-xs {
+    clear:left;
+  }
+
+  .clr-xs {
+    clear:right;
+  }
+
+  .clb-xs {
+    clear:both;
+  }
+
+  .vh-xs {
+    visibility:hidden;
+  }
+
+  .ovv-xs {
+    overflow:visible;
+  }
+
+  .ovh-xs {
+    overflow:hidden;
+  }
+
+  .ovs-xs {
+    overflow:scroll;
+  }
+
+  .bxz-xs {
+    box-sizing:border-box;
+  }
+
+  .vat-xs {
+    vertical-align:top;
+  }
+
+  .vab-xs {
+    vertical-align:bottom;
+  }
+
+  .vam-xs {
+    vertical-align: middle;
+  }
+
+  .bgszcv-xs {
+    background-size:cover;
+  }
+
+  .t0-xs {
+    top: 0 !important;
+  }
+
+  .b0-xs {
+    bottom: 0 !important;
+  }
+
+  .l0-xs {
+    left: 0 !important;
+  }
+
+  .r0-xs {
+    right: 0 !important;
+  }
+
+  .di-xs {
+    display: inline !important;
+  }
+
+  .db-xs {
+    display: block !important;
+  }
+
+  .dib-xs {
+    display: inline-block !important;
+  }
+
+  .dn-xs {
+    display: none !important;
+  }
+
+  .dt-xs {
+    display: table;
+  }
+
+  .dtbc-xs {
+    display: table-cell;
+  }
+
+  .m-a-xs {
+    margin: auto !important;
+  }
+
+  .h100p-xs {
+    height: 100% !important;
+  }
+
+  .w100p-xs {
+    width: 100% !important;
+  }
+
+  .hi-xs {
+    height: initial !important;
+  }
+
+  .wi-xs {
+    width: initial !important;
+  }
+  
+  .tal-xs {
+    text-align: left !important;
+  }
+  
+  .tar-xs {
+    text-align: right !important;
+  }
+  
+  .tac-xs {
+    text-align: center !important;
+  }
+  
+  $pixel-sizes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 20 25 30 35 40 45 50 75 100 150 200 250 300;
+
+  @each $size in $pixel-sizes {
+    .w#{$size}-xs {
+      width: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .m#{$size}-xs {
+      margin: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .mt#{$size}-xs {
+      margin-top: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .mr#{$size}-xs {
+      margin-right: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .mb#{$size}-xs {
+      margin-bottom: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .ml#{$size}-xs {
+      margin-left: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .p#{$size}-xs {
+      padding: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .pt#{$size}-xs {
+      padding-top: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .pr#{$size}-xs {
+      padding-right: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .pb#{$size}-xs {
+      padding-bottom: #{$size}px !important;
+    }
+  }
+
+  @each $size in $pixel-sizes {
+    .pl#{$size}-xs {
+      padding-left: #{$size}px !important;
+    }
+  }
+}

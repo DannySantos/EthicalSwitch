@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EthicalSwitch</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body class="container-fluid">
+    <header class="primary row tac">
+      <div class="col-sm-6 col-sm-offset-3">
+        <%= image_tag "logo_full.png", class: "w80p mt30" %>
+      </div>
+      
+      <nav>
+        <ul class="col-sm-6 col-sm-offset-3">
+          <li class="col-sm-4">
+            <%= link_to "Ethical power", ethical_power_path %>
+          </li>
+          
+          <li class="col-sm-4">
+            <%= link_to "Ethical super", ethical_super_path %>
+          </li>
+          
+          <li class="col-sm-4">
+            <%= link_to "Ethical homeloans", ethical_homeloans_path %>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="clb"></div>
+    </header>
+    
+    <%= yield %>
+  </body>
+</html>
