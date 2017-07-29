@@ -1,11 +1,4 @@
-/*********** EDIT COLORS ***********/
-
-$text_color: #333;
-$link_color: #333;
-$primary_color: #ffd105;
-$highlight_color: #3084bf;
-
-
+@import 'variables';
 
 body {
   color: $text_color;  

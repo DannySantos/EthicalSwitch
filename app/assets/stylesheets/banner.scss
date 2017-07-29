@@ -1,4 +1,14 @@
 .banner {
   height: 427px;
   background-color: #333;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  
+  h1 {
+    text-shadow: 2px 2px #000;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+  }
 }

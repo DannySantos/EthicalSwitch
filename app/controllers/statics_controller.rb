@@ -1,6 +1,6 @@
 class StaticsController < ApplicationController
   def home
-    
+    @charities = Charity.where.not(short_name: "ASRC").where.not(short_name: "Portal Project").order("created_at DESC")
   end
   
   def ethical_power
@@ -12,6 +12,22 @@ class StaticsController < ApplicationController
   end
   
   def ethical_homeloans
+    
+  end
+  
+  def terms_and_conditions
+    
+  end
+  
+  def privacy_policy
+    
+  end
+  
+  def faqs
+    
+  end
+  
+  def contact_us
     
   end
 end

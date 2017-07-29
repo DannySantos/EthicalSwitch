@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+
+.faded {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.faded-blue {
+  background-color: rgba(82, 157, 212, 0.8);
+}
+
+.lh50 {
+  height: 50px;
+  line-height: 50px;
+}
+
+.grey-bg {
+  background-color: #eaeaea;
+}
+
+.italic {
+  font-style: italic;
+}

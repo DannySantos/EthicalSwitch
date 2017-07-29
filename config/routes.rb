@@ -6,4 +6,10 @@ Rails.application.routes.draw do
   get '/ethical_power', to: 'statics#ethical_power'
   get '/ethical_super', to: 'statics#ethical_super'
   get '/ethical_homeloans', to: 'statics#ethical_homeloans'
+  get '/terms_and_conditions', to: 'statics#terms_and_conditions'
+  get '/privacy_policy', to: 'statics#privacy_policy'
+  get '/faqs', to: 'statics#faqs'
+  get '/contact_us', to: 'statics#contact_us'
 end
+
+

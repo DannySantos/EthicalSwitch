@@ -1,0 +1,53 @@
+header.primary {
+  nav {
+    ul {
+      list-style-type: none;
+      
+      a {
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        color: #000;
+        
+        &.power {
+          background-image: image-url("menu_icon_power");
+        }
+        
+        &.super {
+          background-image: image-url("menu_icon_super");
+        }
+        
+        &.homeloans {
+          background-image: image-url("menu_icon_homeloans");
+        }
+        
+        &:hover {
+          background-position: 0 -26px;
+        }
+        
+        span {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+footer.primary {
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  
+  ul {
+    li {
+      display: inline;
+      margin-right: 15px;
+      
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
