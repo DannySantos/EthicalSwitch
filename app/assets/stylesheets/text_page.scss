@@ -1,0 +1,41 @@
+.text-page {
+  header {
+    background-color: #eaeaea;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  main {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  
+  a {
+    color: #3084bf;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .faqs {
+    ul {
+      list-style-type: none;
+      
+      li {
+        margin-bottom: 15px;
+      }
+    }
+    
+    span.tdu {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}

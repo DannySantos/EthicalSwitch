@@ -1,0 +1,16 @@
+.overlay {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.popup {
+  background-color: #fff;
+  z-index: 200;
+  width: 80%;
+  margin-left: 10%;
+}
