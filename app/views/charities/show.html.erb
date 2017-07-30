@@ -1,0 +1,75 @@
+<section class="banner row flex-center mb0 banner_charity <%= "banner_#{@charity.filename}" %>">
+  <div class="faded w100p tac pt15 pb15">
+    <h1 class="white-text">Make an Ethical <span class="yellow-text">Switch</span></h1>
+    
+    <p>
+      And <%= @charity.name == "Healthy Futures" ? "a charity of your choice" : @charity.name %> 
+      receive a donation!
+      <%= image_tag "help.png", rel: "tooltip", title: "We give over 90% of our profits to our charity partners! <br /> <span class=&quot;tooltip-tap&quot;>Tap to close</span>" %>
+    </p>
+    
+    <%= image_tag "charity_logo_#{@charity.filename}", class: "w100" %>
+  </div>
+</section>
+	
+<% if @charity.name == "350" %>
+  <div class="highlight-bg row tac">
+    <%= image_tag "power_for_change.png" %>
+  </div>
+
+  <div class="col-sm-6 col-sm-offset-3 tac p30">
+    <p>Australia’s big power companies - AGL, EnergyAustralia and Origin - are some of the world’s dirtiest, spewing out carbon pollution that is driving global warming and harming our health at an alarming rate. </p>
+
+    <p>By divesting from the Big Polluters and switching to a clean energy provider today you’re joining a growing network of households and communities that are calling on these companies to get out of fossil fuels and get on with the job of repowering Australia with clean energy from the sun and the wind.</p>
+
+    <p>Make sure you tell your friends, neighbours and colleagues about why you’re standing up to the Big Polluters and encourage them to get involved at www.powerforchange.com.au. And if you haven’t already, make sure you let your energy company know why you’re giving them the flick! Template letters are available for download here.</p>
+
+    <p>The funds raised through this program will go towards 350.org’s work supporting Power For Change to grow in more communities and empower more customers to take action.</p>
+
+    <p>Thanks for standing up to dirty energy!</p>
+  </div>
+<% end %>
+
+<div class="col-sm-8 col-sm-offset-2 tac mt40 mb40">
+  <h2 class="tac mb40">How it Works</h2>
+
+  <div class="col-sm-4">
+    <%= image_tag "icon_how_1.png" %>
+
+    <p>Choose one of our ethical products</p>
+  </div>
+
+  <div class="col-sm-4">
+    <%= image_tag "icon_how_2.png" %>
+
+    <p>Make the switch</p>
+  </div>
+
+  <div class="col-sm-4">
+    <%= image_tag "icon_how_3.png" %>
+
+    <p>We make a donation to <%= @charity.name == "Healthy Futures" ? "a charity of your choice" : @charity.name %> on your behalf!</p>
+  </div>
+
+  <div class="clb"></div>
+</div>
+
+<div class="clb"></div>
+
+<%= render 'statics/switch_options', no_super: @charity.name == "Friends of the Earth" ? true : false %>
+
+<div class="col-sm-10 col-sm-offset-1 tal mb40">
+  <h2 class="tac mb40">FAQs</h2>
+
+  <%= render @faqs %>
+
+  <div class="clb"></div>
+
+  <div class="tac">
+    <%= link_to "See full FAQs", faqs_path, class: "btn btn-primary btn-padded" %>
+  </div>
+</div>
+
+<div class="clb"></div>
+
+<%= render 'statics/criteria' %>

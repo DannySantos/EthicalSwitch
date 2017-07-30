@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]
   resources :partners, only: [:new, :show]
+  resources :charities, only: [:show]
   
   resources :switches, only: [:new, :create] do
     get 'ethical_power', on: :collection

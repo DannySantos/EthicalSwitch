@@ -1,3 +1,5 @@
 <div class="col-sm-3">
-  <%= image_tag "charity_logo_#{charity.short_name.underscore.gsub(" ", "_")}.jpg", class: "w100p" %>
+  <%= link_to charity_path(charity) do %>
+    <%= image_tag "charity_logo_#{charity.short_name.underscore.gsub(" ", "_")}.jpg", class: "w100p" %>
+  <% end %>
 </div>

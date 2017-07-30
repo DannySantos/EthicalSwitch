@@ -1,0 +1,79 @@
+<section id="switches" class="row tac mb40 por">
+  <%= render 'statics/popups' %>
+  
+  <div class="<%= no_super ? "col-sm-6" : "col-sm-4" %> p10">
+    <div class="grey-padded">
+      <h3>Switch your power provider</h3>
+      
+      <p class="col-sm-10 col-sm-offset-1 mb20">Choose a power provider that cares about both you and the environment.</p>
+    
+      <div class="col-sm-4 col-sm-offset-4 mb20">
+        <%= image_tag "icon_power", class: "w100p" %>
+      </div>
+      
+      <div class="clb"></div>
+      
+      <p class="mb10">
+        <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_power_button" %>
+      </p>
+      
+      <p class="text-s">
+        <%= link_to "Or find out more", ethical_power_switches_path %>
+      </p>
+      
+      <div class="clb"></div>
+    </div>
+  </div>
+  
+  <% unless no_super %>
+    <div class="col-sm-4 p10">
+      <div class="grey-padded">
+        <h3>Switch your super fund</h3>
+
+        <p class="col-sm-10 col-sm-offset-1 mb20">Make sure your super funds only positive investments and companies.</p>
+
+        <div class="col-sm-4 col-sm-offset-4 mb20">
+          <%= image_tag "icon_super", class: "w100p" %>
+        </div>
+
+        <div class="clb"></div>
+
+        <p class="mb10">
+          <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_super_button" %>
+        </p>
+
+        <p class="text-s">
+          <%= link_to "Or find out more", ethical_super_switches_path %>
+        </p>
+
+        <div class="clb"></div>
+      </div>
+    </div>
+  <% end %>
+  
+  <div class="<%= no_super ? "col-sm-6" : "col-sm-4" %> p10">
+    <div class="grey-padded">
+      <h3>Switch your homeloan</h3>
+      
+      <p class="col-sm-10 col-sm-offset-1 mb20">Make sure your biggest investment is having a positive effect on the world.</p>
+    
+      <div class="col-sm-4 col-sm-offset-4 mb20">
+        <%= image_tag "icon_homeloans", class: "w100p" %>
+      </div>
+      
+      <div class="clb"></div>
+      
+      <p class="mb10">
+        <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_homeloans_button" %>
+      </p>
+      
+      <p class="text-s">
+        <%= link_to "Or find out more", ethical_homeloans_switches_path %>
+      </p>
+      
+      <div class="clb"></div>
+    </div>
+  </div>
+  
+  <div class="clb"></div>
+</section>
