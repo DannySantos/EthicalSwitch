@@ -8,12 +8,13 @@ Rails.application.routes.draw do
   
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]
-  resources :partners, only: [:show]
+  resources :partners, only: [:new, :show]
   
   resources :switches, only: [:new, :create] do
     get 'ethical_power', on: :collection
     get 'ethical_super', on: :collection
     get 'ethical_homeloans', on: :collection
+    get 'homeloans_sent', on: :collection
   end
 end
 
