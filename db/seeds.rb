@@ -1,3 +1,45 @@
+Partner.find_or_create_by(
+  name: "Powershop",
+  industry: 0,
+  line: "Australia’s Greenest Power Company (Greenpeace 2014 & 2015)"
+)
+
+Partner.find_or_create_by(
+  name: "Energy Locals",
+  industry: 0,
+  line: "Social enterprise offering Australia's fairest energy, with half the profit put into communities and new, local renewable energy"
+)
+
+Partner.find_or_create_by(
+  name: "Diamond Energy",
+  industry: 0,
+  line: "Passionate about renewables"
+)
+
+Partner.find_or_create_by(
+  name: "Good Super",
+  industry: 1,
+  line: "Use your super to change the world. Join the Good Super movement. It's quick, simple &amp; rewarding."
+)
+
+Partner.find_or_create_by(
+  name: "Australian Ethical",
+  industry: 1,
+  line: "Join over 33,000 Australians who have chosen the super fund that’s good for the planet, people and animals."
+)
+
+Partner.find_or_create_by(
+  name: "Future Super",
+  industry: 1,
+  line: "Switch to Australia's ONLY super fund with absolutely no investment in fossil fuels."
+)
+
+Partner.find_or_create_by(
+  name: "Ethical Homeloans",
+  industry: 2,
+  line: ""
+)
+
 Charity.find_or_create_by(
   name: "Asylum Seeker Resource Centre",
   short_name: "ASRC",

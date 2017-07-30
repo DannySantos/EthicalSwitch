@@ -10,20 +10,6 @@
 		
 		<p>Or alternatively fill out the form below and we'll get back to you as soon as we can:</p>
    
-    <%= form_for(@message) do |f| %>
-      <%= f.label :name, "Name*" %>
-      <%= f.text_field :name, class: "form-control" %>
-      
-      <%= f.label :email, "Email*" %>
-      <%= f.email_field :email, class: "form-control" %>
-      
-      <%= f.label :postcode, "Postcode" %>
-      <%= f.text_field :postcode, class: "form-control" %>
-      
-      <%= f.label :message, "Message*" %>
-      <%= f.text_area :message, class: "form-control" %>
-      
-      <%= f.submit "Send", class: "btn btn-primary" %>
-    <% end %>
+    <%= render 'form', bill_compare: nil, remote: nil %>
   </main>
 </div>

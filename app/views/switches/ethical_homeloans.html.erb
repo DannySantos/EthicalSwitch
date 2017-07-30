@@ -1,0 +1,121 @@
+<section class="banner row flex-center" style="background-image:url(<%= image_url "banner_homeloans.jpg" %>)">
+  <div class="faded w100p tac pt15 pb15">
+    <h1 class="white-text mb20">Switch to a more ethical homeloan</h1>
+    
+    <%= link_to "Switch Now", "#switch", class: "btn btn-primary btn-padded mt10" %>
+  </div>
+</section>
+
+<section class="row tac mb40">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="m0">Ethical Homeloans</h2>
+
+    <p><b>Having a positive effect on the world can be as simple as switching your homeloan.</b></p>
+
+    <p>Your home loan is one of the biggest investments you'll make in your life.</p>
+
+    <p>Your choice is a powerful thing.</p>
+
+    <p>We've introduced green home loans to empower people to be able to make ethical choices about their home loan; to be informed and know that there are alternatives.</p>
+
+    <p>Our partners at Ethical Homeloans source banks that not investing in fossil fuels and who are committed to renewable energy. They present you with a range of ethical alternatives, give advice on which option is best for your unique situation and then manage the entire application process for you.</p>
+
+    <p><strong>Switching never felt better</strong></p>
+  </div>
+  
+  <div class="clb"></div>
+</section>
+
+<section class="how-it-works row mb40 tac">
+  <div class="highlight-bg pt20 pb20 text-white mb20">
+    <h2>How it works</h2>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="col-sm-4 pt10">
+      <div class="grey-padded">
+        <%= image_tag "reasons_computer.png" %>
+        <p><b>Step 1</b></p>
+
+        <p>Register your interest to make the switch by entering your details below and hit 'Start the Switch'.</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4 pt10">
+      <div class="grey-padded">
+        <%= image_tag "reasons_app.png" %>
+
+        <p><b>Step 2</b></p>
+
+        <p>An experienced member of the Ethical Homeloans team will get in touch with you to discuss the switching process and identify an alternative ethical lender which best meets your needs.</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4 pt10">
+      <div class="grey-padded">
+        <%= image_tag "reasons_service.png" %>
+
+        <p><b>Step 3</b></p>
+
+        <p>If you are satisfied with an ethical alternative, collaborate with the Ethical Homeloans team member and they will manage the switching process for you – from A to Z. It couldn’t be easier.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="clb"></div>
+</section>
+
+<section id="switch" class="row mb40">
+  <div class="highlight-bg pt20 pb20 tac text-white">
+    <h2>Switch Now</h2>
+  </div>
+
+  <div class="col-sm-6 col-sm-offset-3">
+    <p>Fill in the form below and someone from Ethical Homeloans will be in touch to help you find the right ethical homeloan.</p>
+
+    <p>The only other thing you need to do, whilst Ethical Homeloans is working on your loan, is consider which non-profit organisation you would like to donate to when your loan is secured.</p>
+    
+    <%= form_for(@switch) do |f| %>
+      <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
+      <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
+      <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+      <%= f.text_field :postcode, class: "form-control", placeholder: "Postcode" %>
+      <div class="tac"><%= f.submit "Start the Switch", class: "btn btn-primary btn-padded" %></div>
+    <% end %>
+  </div>
+  
+  <div class="clb"></div>
+</section>
+
+<%= render 'statics/sign_up_bar' %>
+	
+<section class="row mb40">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2 class="tac mb20">FAQs</h2>
+
+    <% @faqs.each do |faq| %>
+      <div class="faq_container">
+        <div class="faq">
+          <div class="faq_question">
+            <%= image_tag "plus.png" %>
+            <%= faq.title %>
+          </div>
+
+          <div class="faq_answer_container">
+            <div class="faq_answer">
+              <%= faq.answer %>
+            </div>        
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="clb"></div>
+  
+  <div class="tac">
+    <%= link_to "See full FAQs", faqs_path, class: "btn btn-primary btn-padded" %>
+  </div>
+</section>
+	
+<%= render 'statics/criteria' %>

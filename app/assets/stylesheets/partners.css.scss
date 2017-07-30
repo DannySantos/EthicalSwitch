@@ -1,0 +1,140 @@
+.partner {
+  .chosen-provider {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  main {
+    border: 1px solid #d3d3d3;
+    border-top: 0;
+    border-bottom: 0;
+    
+    hr {
+      width: 90%;
+      margin-left: 5%;
+      background-color: #ccc;
+      height: 1px;
+      border: 0;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .good-super-icons {
+    img {
+      width: 87px;
+    }
+  }
+  
+  .aus-eth-list {
+    margin: 0;
+    padding: 20px 16px 16px 40px;
+    list-style-type: none;
+    font-size: 1.1em;
+    line-height: 25px;
+    
+    li {
+      background: image-url("aus_eth_black_tick") no-repeat left 2px;
+      padding-left: 33px;
+      margin-bottom: 10px;
+      
+      .disclaimer {
+        font-size: 0.6em;
+        
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .aus-eth-icons {
+    img {
+      max-width: 44%;
+    }
+    
+    p.icon-text {
+      width: 50%;
+      text-align: left;
+    }
+  }
+  
+  .aus-eth-icons-2 {
+    img {
+      max-width: 50%;
+    }
+  }
+  
+  .aus-eth-testimonial {
+    background-color: #f6f6f6;
+    padding: 20px 60px;
+    
+    .australian-ethical-photo {
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      background-image: image-url("aus_eth_tim_silverwood.jpg");
+      border-radius: 50%;
+      float: left;
+    }
+    
+    blockquote {
+      width: calc(100% - 230px);
+      padding-top: 30px;
+      font-weight: bold;
+      line-height: 24px;
+      
+      footer {
+        font-size: 0.8em;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .future-super-approved, .future-super-excluded {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 0;
+    
+    .tick-cross {
+      position: absolute;
+      width: 100%;
+      top: -50px;
+      left: 0;
+      text-align: center;
+    }
+  }
+  
+  .future-super-approved {
+    background-color: #EACD80;
+  }
+  
+  .future-super-excluded {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .future-super-icons div {
+    margin-bottom: 30px;
+  }
+  
+  .future-super-carbon-neutral {
+    padding: 20px;
+    background-color: #eaeaea;
+    border: 2px dashed #abcdef;
+    width: 90%;
+    margin-left: 5%;
+    
+    & div:nth-child(2) {
+      font-size: 1.4em;
+    }
+  }
+}

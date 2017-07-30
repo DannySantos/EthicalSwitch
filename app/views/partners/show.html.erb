@@ -1,0 +1,31 @@
+<div class="partner">
+  <div class="highlight-bg row pt50 pb50 por">
+    <div class="chosen-provider col-sm-8">
+      Your chosen <%= @partner.industry %> provider is:
+    </div>
+  </div>
+
+  <div class="row">
+    <main class="col-sm-8 col-sm-offset-2 pt20 pb40">
+      <div class="col-sm-8 col-sm-offset-2 tac mb20">
+        <%= image_tag "partner_#{@partner.name.downcase.gsub(" ", "_")}_full.png" %>
+      </div>
+      
+      <div class="partner-banner row mb20">
+        <%= image_tag "banner_#{@partner.name.downcase.gsub(" ", "_")}.jpg", class: "w100p" %>
+      </div>
+      
+      <div class="p20 tac mb20">
+        <h1><%= @partner.line.html_safe %></h1>
+      </div>
+      
+      <div class="tac mb20">
+        <%= link_to "START THE SWITCH", "#switch_#{@partner.name.downcase.gsub(" ", "_")}", class: "btn btn-primary btn-padded" %>
+      </div>
+      
+      <hr>
+      
+      <%= render "#{@partner.name.downcase.gsub(" ", "_")}" %>
+    </main>
+  </div>
+</div>

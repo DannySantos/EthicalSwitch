@@ -1,0 +1,61 @@
+<section class="banner row flex-center" style="background-image:url(<%= image_url "banner_power.jpg" %>)">
+  <div class="faded w100p tac pt15 pb15">
+    <h1 class="white-text mb20">Which power company deserves your money?</h1>
+    
+    <form method="post" action="ethical-power-results">
+      <div class="col-sm-2 col-sm-offset-4">
+        <select class="form-control" name="state">
+          <option value="default" class="dropdown-default">Select a State...</option>
+          <option value="act">ACT</option>
+          <option value="nsw">NSW</option>
+          <!--<option value="nt">NT</option>-->
+          <option value="qld">QLD</option>
+          <option value="sa">SA</option>
+          <option value="tas">TAS</option>
+          <option value="vic">VIC</option>
+          <!--<option value="wa">WA</option>-->
+        </select>
+      </div>
+
+      <div class="col-sm-2">
+        <input type="submit" name="power-submit" id="power-submit" class="btn btn-primary form-control" value="Find Out Now" onClick="return val();">
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="row tac mb40">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="m0">Ethical Power</h2>
+
+    <p><b>Having a positive effect on the world can be as simple as switching your spending to the right company.</b></p>
+
+    <p>We have done the research and discovered who are the best power companies in Australia.</p>
+
+    <p>Simply <strong>select which state</strong> you are in above and <strong>click 'Find Out Now'</strong> to see a full list of who the best power companies operating in your area are and why.</p>
+
+    <p>If you like one of our 5 star companies then you also have the option to click on the 'Switch Now' button and complete a simple 5 minute online process to make a switch to your new chosen ethical provider. If you do you'll know what we mean when we say:</p> 
+
+    <p><strong>Switching never felt better.</strong></p>
+  </div>
+  
+  <div class="clb"></div>
+</section>
+
+<%= render 'statics/sign_up_bar' %>
+	
+<section class="row mb40">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2 class="tac mb20">FAQs</h2>
+
+    <%= render @faqs %>
+  </div>
+  
+  <div class="clb"></div>
+  
+  <div class="tac">
+    <%= link_to "See full FAQs", faqs_path, class: "btn btn-primary btn-padded" %>
+  </div>
+</section>
+	
+<%= render 'statics/criteria' %>

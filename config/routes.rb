@@ -3,14 +3,18 @@ Rails.application.routes.draw do
   
   root to: 'statics#home'
   
-  get '/ethical_power', to: 'statics#ethical_power'
-  get '/ethical_super', to: 'statics#ethical_super'
-  get '/ethical_homeloans', to: 'statics#ethical_homeloans'
   get '/terms_and_conditions', to: 'statics#terms_and_conditions'
   get '/privacy_policy', to: 'statics#privacy_policy'
   
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]
+  resources :partners, only: [:show]
+  
+  resources :switches, only: [:new, :create] do
+    get 'ethical_power', on: :collection
+    get 'ethical_super', on: :collection
+    get 'ethical_homeloans', on: :collection
+  end
 end
 
 

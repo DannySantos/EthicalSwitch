@@ -5,25 +5,41 @@
   </div>
 </section>
 
-<section class="col-sm-6 col-sm-offset-3 tac mb40">
-  <h2 class="m0">Make an Ethical Switch</h2>
+<section class="row tac mb40">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="m0">Make an Ethical Switch</h2>
 
-  <p><b>Having a positive effect on the world can be as simple as switching your spending to the right company.</b></p>
+    <p><b>Having a positive effect on the world can be as simple as switching your spending to the right company.</b></p>
 
-  <p>We would all rather that the money we spent didn't cause any harm but it can be tricky to know which companies are the bad ones and which are the good.</p>
+    <p>We would all rather that the money we spent didn't cause any harm but it can be tricky to know which companies are the bad ones and which are the good.</p>
 
-  <p><strong>This is why we exist.</strong></p>	
+    <p><strong>This is why we exist.</strong></p>	
 
-  <p>We are a new social enterprise whose mission is to find ethical companies offering great deals and to make it simple for people to switch across to them. By finding affordable deals from ethical companies, the choice is each of ours to make. So are you up for making an Ethical Switch.</p> 
+    <p>We are a new social enterprise whose mission is to find ethical companies offering great deals and to make it simple for people to switch across to them. By finding affordable deals from ethical companies, the choice is each of ours to make. So are you up for making an Ethical Switch.</p> 
 
-  <p>We promise you, <strong>switching never felt better.</strong></p>	
+    <p>We promise you, <strong>switching never felt better.</strong></p>	
+  </div>
+  
+  <div class="clb"></div>
 </section>
 
-<div class="clb"></div>
-
-<section id="switches" class="row tac mb40">
+<section id="switches" class="row tac mb40 por">
+  <%= render 'statics/popups' %>
+  
+  <div id="switch_super" class="popup" style="display:none;">
+    <div class="close"></div>
+    
+    Super Popup
+  </div>
+  
+  <div id="switch_homeloans" class="popup" style="display:none;">
+    <div class="close"></div>
+    
+    Homeloans Popup
+  </div>
+  
   <div class="col-sm-4 p10">
-    <div class="switch-container">
+    <div class="grey-padded">
       <h3>Switch your power provider</h3>
       
       <p class="col-sm-10 col-sm-offset-1 mb20">Choose a power provider that cares about both you and the environment.</p>
@@ -35,11 +51,11 @@
       <div class="clb"></div>
       
       <p class="mb10">
-        <%= link_to "START THE SWITCH", "#switch_power", class: "btn btn-primary btn-padded" %>
+        <%= link_to "START THE SWITCH", "#switch_power", class: "btn btn-primary btn-padded popup_reveal", id: "switch_power_button" %>
       </p>
       
       <p class="text-s">
-        <%= link_to "Or find out more", ethical_power_path, class: "" %>
+        <%= link_to "Or find out more", ethical_power_switches_path %>
       </p>
       
       <div class="clb"></div>
@@ -47,7 +63,7 @@
   </div>
   
   <div class="col-sm-4 p10">
-    <div class="switch-container">
+    <div class="grey-padded">
       <h3>Switch your super fund</h3>
       
       <p class="col-sm-10 col-sm-offset-1 mb20">Make sure your super funds only positive investments and companies.</p>
@@ -59,11 +75,11 @@
       <div class="clb"></div>
       
       <p class="mb10">
-        <%= link_to "START THE SWITCH", "#switch_super", class: "btn btn-primary btn-padded" %>
+        <%= link_to "START THE SWITCH", "#switch_super", class: "btn btn-primary btn-padded popup_reveal", id: "switch_super_button" %>
       </p>
       
       <p class="text-s">
-        <%= link_to "Or find out more", ethical_super_path, class: "" %>
+        <%= link_to "Or find out more", ethical_super_switches_path %>
       </p>
       
       <div class="clb"></div>
@@ -71,7 +87,7 @@
   </div>
   
   <div class="col-sm-4 p10">
-    <div class="switch-container">
+    <div class="grey-padded">
       <h3>Switch your homeloan</h3>
       
       <p class="col-sm-10 col-sm-offset-1 mb20">Make sure your biggest investment is having a positive effect on the world.</p>
@@ -83,11 +99,11 @@
       <div class="clb"></div>
       
       <p class="mb10">
-        <%= link_to "START THE SWITCH", "#switch_homeloans", class: "btn btn-primary btn-padded" %>
+        <%= link_to "START THE SWITCH", "#switch_homeloans", class: "btn btn-primary btn-padded popup_reveal", id: "switch_homeloans_button" %>
       </p>
       
       <p class="text-s">
-        <%= link_to "Or find out more", ethical_homeloans_path, class: "" %>
+        <%= link_to "Or find out more", ethical_homeloans_switches_path %>
       </p>
       
       <div class="clb"></div>
@@ -195,55 +211,7 @@
 
 <%= render 'sign_up_bar' %>
 
-<section class="row mb40">
-  <div class="col-sm-10 col-sm-offset-1 tac">
-    <h2 class="mb20">What Makes an Ethical Company?</h2>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_1.png" %>
-
-      <p><strong>Environmental Impact</strong></p>
-
-      <p>
-        Carbon offsetting, paperless billing, investment in renewable energy - we consider anything that has an impact on the environment
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_2.png" %>
-
-      <p><strong>Value for Money</strong></p>
-
-      <p>
-        Are the prices fair? Are all of the costs transparent? We find you the best deals on products/services that have a positive impact
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_3.png" %>
-
-      <p><strong>Customer Experience</strong></p>
-
-      <p>
-        Are there hidden fees or lock-in contracts? Are they easy to contact and pleasant to talk to? We value the way a company treats 
-        its customers
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_4.png" %>
-
-      <p><strong>Reputation &amp; Endorsements</strong></p>
-
-      <p>
-        What are people saying about the companies you buy from? Have they received endorsements from reputable sources? We like to find the 
-        companies that have
-      </p>
-    </div>
-  </div>
-  
-  <div class="clb"></div>
-</section>
+<%= render 'statics/criteria' %>
 
 <div class="clb"></div>
 
@@ -270,7 +238,7 @@
     </p>
 
     <p>
-      Based in Melbourne, we were incubated by a group of passionate volunteers in 2014.  The heart of our business is to empower our awesome not-for-profit partners and that’s why we donate over 90% of our profits!
+      Based in Melbourne, we were incubated by a group of passionate volunteers in 2014.  The heart of our business is to empower our awesome not-for-profit partners and that's why we donate over 90% of our profits!
     </p>
   </div>
 		
@@ -290,7 +258,7 @@
     </p>
 
     <p>
-      We hope you enjoy our service and that after you've made your first switch you’ll agree that switching never felt better.
+      We hope you enjoy our service and that after you've made your first switch you'll agree that switching never felt better.
     </p>
   </div>
   

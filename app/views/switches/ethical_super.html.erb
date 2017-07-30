@@ -1,0 +1,82 @@
+<section class="banner row flex-center" style="background-image:url(<%= image_url "banner_super.jpg" %>)">
+  <div class="faded w100p tac pt15 pb15">
+    <h1 class="white-text mb20">Which super funds will invest your money ethically?</h1>
+  </div>
+</section>
+
+<section class="row tac mb40">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="m0">Ethical Super</h2>
+    
+    <p><b>Having a positive effect on the world can be as simple as switching your superannuation fund.</b></p>
+
+    <p>Australians have over AUD$2.05 trillion in superannuation assets but not all of us know where or how it is being invested.</p>
+
+    <p>At Ethical Switch we take the hard part out of finding a super fund that matches your values. The superannuation companies on our website seek investment opportunities that focus on promoting renewable energy, health and education. They actively avoid investing in detention centres, fossil fuels and weapons.</p>
+
+    <p>Click on the links below to  discover how you can take back control of your super.</p>
+
+    <p>If you like what you see then click on the 'Switch Now' button and complete a simple 5 minute online process to make a switch to your new chosen super. Then you'll know what we mean when we say:</p> 
+
+    <p><strong>Switching never felt better</strong></p>
+  </div>
+  
+  <div class="clb"></div>
+</section>
+
+<%= render 'statics/sign_up_bar' %>
+
+<section class="row tac mb40">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h3 class="m0">What's different about these funds?</h3>
+
+    <p>Are all members of Responsible Investment Association of Australia</p>
+
+    <p>All selected funds are non restrictive (i.e. not industry or religion specific)</p>
+
+    <p>Ethical investment is core business not optional stream</p>
+
+    <p>Each fund provides transparency on investments</p>
+
+    <p>Making the switch takes less than 5 minutes online</p>
+
+    <p>Companies will track lost super for you</p>
+  </div>	  
+</section>
+	
+<section class="row mb40">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2 class="tac mb20">FAQs</h2>
+
+    <% @faqs.each do |faq| %>
+      <div class="faq_container">
+        <div class="faq">
+          <div class="faq_question">
+            <%= image_tag "plus.png" %>
+            <%= faq.title %>
+          </div>
+
+          <div class="faq_answer_container">
+            <div class="faq_answer">
+              <%= faq.answer %>
+            </div>        
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="clb"></div>
+  
+  <div class="tac">
+    <%= link_to "See full FAQs", faqs_path, class: "btn btn-primary btn-padded" %>
+  </div>
+</section>
+	
+<%= render 'statics/criteria' %>
+
+<div class="disclaimer pl40 pr40">
+  <p><b>Important Information about superannuation funds featured by Ethical Switch:</b></p>
+
+  <p>The material on this website is for your information only and is not intended to be advice, or to influence your decision in choosing a superannuation fund. The information provided does not take into account your particular investment objectives, financial situation or investment needs, all of which should be considered prior to making an investment decision. Any decision you make must be based on your own assessment of the merits or otherwise of the products featured on  this website.<strong>You should seek professional financial advice before making any investment decision.</strong></p>
+</div>

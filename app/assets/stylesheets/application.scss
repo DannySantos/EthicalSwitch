@@ -35,6 +35,15 @@ blockquote {
   margin: 0;
 }
 
+textarea {
+  min-height: 200px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -68,10 +77,6 @@ blockquote {
   text-decoration: underline;
 }
 
-textarea {
-  min-height: 200px;
-}
-
 .notice, .alert {
   position: absolute;
   width: 50%;
@@ -83,4 +88,18 @@ textarea {
   border: 1px solid #d0d0d0;
   text-align: center;
   box-shadow: 3px 3px #eaeaea;
+}
+
+.disclaimer {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.grey-padded {
+  background-color: #eaeaea;
+  padding: 20px 15px 15px 10px;
+}
+
+.text-light-green {
+  color: #40AE49;
 }

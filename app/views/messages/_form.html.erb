@@ -1,0 +1,26 @@
+<%= form_for(@message, remote: remote ? true : false) do |f| %>
+  <%= f.label :name, "Name*" %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :email, "Email*" %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <% unless bill_compare %>
+    <%= f.label :postcode, "Postcode" %>
+    <%= f.text_field :postcode, class: "form-control" %>
+  <% end %>
+  
+  <% if bill_compare %>
+    <%= f.label :phone, "Phone Number*" %>
+    <%= f.text_field :phone, class: "form-control" %>
+  <% end %>
+
+  <%= f.label :message, "Message*" %>
+  <%= f.text_area :message, class: "form-control" %>
+
+  <%= f.hidden_field :bill_compare, value: true if bill_compare %>
+
+  <div class="tac">
+    <%= f.submit "Send", class: "btn btn-primary btn-padded" %>
+  </div>
+<% end %>
