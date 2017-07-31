@@ -44,14 +44,14 @@ Charity.find_or_create_by(
   name: "Asylum Seeker Resource Centre",
   short_name: "ASRC",
   description: "The Asylum Seeker Resource Centre provides community, support and bare essentials to the people who need it most",
-  status: "current"
+  status: "expired"
 )
 
 Charity.find_or_create_by(
   name: "Portal Project",
   short_name: "Portal Project",
   description: "Bringing education, entertainment and personal messages from Melbourne to displaced children in South Sudan",
-  status: "current"
+  status: "expired"
 )
 
 Charity.find_or_create_by(

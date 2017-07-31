@@ -39,7 +39,7 @@
     <% @charities.each_with_index do |charity, index| %>
       <div class="col-sm-3 tac p10">
         <div class="charity-option" data-charity-id="<%= charity.id %>">
-          <%= image_tag "charity_logo_#{charity.filename}", class: "w100p" %>
+          <%= image_tag "charity_logo_#{charity.filename}.jpg", class: "w100p" %>
 
           <p class="text-s"><%= charity.name %></p>
         </div>

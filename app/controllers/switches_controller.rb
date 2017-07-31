@@ -10,7 +10,6 @@ class SwitchesController < ApplicationController
   def create
     @switch = Switch.new(switch_params)
     
-    binding.pry
     if @switch.save
       redirect_to get_redirect_path(@switch)
     else
