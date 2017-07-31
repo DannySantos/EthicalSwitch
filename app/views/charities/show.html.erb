@@ -5,7 +5,7 @@
     <p>
       And <%= @charity.name == "Healthy Futures" ? "a charity of your choice" : @charity.name %> 
       receive a donation!
-      <%= image_tag "help.png", rel: "tooltip", title: "We give over 90% of our profits to our charity partners! <br /> <span class=&quot;tooltip-tap&quot;>Tap to close</span>" %>
+      <%= image_tag "help.png", rel: "tooltip", title: 'We give over 90% of our profits to our charity partners! <br /> <span class="tooltip-tap">Tap to close</span>' %>
     </p>
     
     <%= image_tag "charity_logo_#{@charity.filename}", class: "w100" %>

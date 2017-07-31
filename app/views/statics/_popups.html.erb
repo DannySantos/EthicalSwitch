@@ -2,46 +2,119 @@
   <div class="close"></div>
 
   <h2>Switch your power provider</h2>
+  
+  <p class="col-sm-8 col-sm-offset-2">We have done our research and found the greenest, fairest, most ethical power providers in Australia. To view our full criteria and compare the ethics of all power providers, check out our <%= link_to "power criteria table", power_providers_path, class: "link" %>.</p>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Powershop</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_powershop_full_transparent.png" %>
+  <div class="df w100p">
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_powershop_full_transparent.png" %>
+        </div>
+        
+        <p class="text-s">Available in <b>VIC, NSW &amp; SE-QLD</b></p>
+
+        <ul class="provider-checklist">
+          <li>
+            100% renewable energy
+          </li>
+
+          <li>
+            Zero carbon emissions
+          </li>
+
+          <li>
+            No lock-in contracts
+          </li>
+
+          <li>
+            Will pay exit fee from your current contract
+            <%= image_tag "help.png", rel: "tooltip", title: 'Up to $75, which covers almost every possible contract <br> <span class="tooltip-tap">Tap to close</span>' %>
+          </li>
+
+          <li>
+            Ranked <b>Australia's greenest provider</b> by Greenpeace two years running
+          </li>
+        </ul>
+
+        <div>
+          <p class="mt0"><%= link_to "Choose Powershop", new_switch_path(partner_id: @powershop.id, charity_id: (@charity && @charity.name != "Healthy Futures") ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+          <p><%= link_to "Or find out more about Powershop", partner_path(@powershop), class: "text-s" %></p>
+        </div>
       </div>
-      
-      <p><%= link_to "Choose Powershop", new_switch_path(partner_id: @powershop.id, charity_id: (@charity && @charity.name != "Healthy Futures") ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Powershop", partner_path(@powershop), class: "text-s" %></p>
     </div>
-  </div>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Energy Locals</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_energy_locals_full.png" %>
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_energy_locals_full.png" %>
+        </div>
+        
+        <p class="text-s">Available in <b>NSW &amp; QLD</b></p>
+
+        <ul class="provider-checklist">
+          <li>
+            Promise to never raise prices for profit reasons
+          </li>
+
+          <li>
+            Donate over half their profits to charity
+          </li>
+
+          <li>
+            No lock-in contracts
+          </li>
+
+          <li>
+            Fixed prices until July 2018
+          </li>
+
+          <li class="no-tick text-s">
+            Note: If you're wondering why we don't mention renewables it's because Energy Locals do not own generators!
+          </li>
+        </ul>
+
+        <div>
+          <p><%= link_to "Choose Energy Locals", new_switch_path(partner_id: @energy_locals.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+          <p><%= link_to "Or find out more about Energy Locals", partner_path(@energy_locals), class: "text-s" %></p>
+        </div>
       </div>
-      
-      <p><%= link_to "Choose Energy Locals", new_switch_path(partner_id: @energy_locals.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Energy Locals", partner_path(@energy_locals), class: "text-s" %></p>
     </div>
-  </div>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Diamond Energy</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_diamond_energy_full.png" %>
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_diamond_energy_full.png" %>
+        </div>
+        
+        <p class="text-s">Available in <b>VIC, NSW, SA &amp; QLD</b></p>
+
+        <ul class="provider-checklist">
+          <li>
+            Solar specialists
+          </li>
+
+          <li>
+            100% renewable energy
+          </li>
+
+          <li>
+            Zero carbon emissions
+          </li>
+
+          <li>
+            Ranked Australia's second greenest provider by Greenpeace two years running
+          </li>
+        </ul>
+
+        <div>
+          <p><%= link_to "Choose Diamond Energy", new_switch_path(partner_id: @diamond_energy.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+          <p><%= link_to "Or find out more about Diamond Energy", partner_path(@diamond_energy), class: "text-s" %></p>
+        </div>
       </div>
-      
-      <p><%= link_to "Choose Diamond Energy", new_switch_path(partner_id: @diamond_energy.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Diamond Energy", partner_path(@diamond_energy), class: "text-s" %></p>
     </div>
   </div>
 </div>
@@ -50,46 +123,110 @@
   <div class="close"></div>
 
   <h2>Switch your super provider</h2>
+  
+  <p class="col-sm-8 col-sm-offset-2">We have done our research and partnered up with three super funds who are committed to investing only in companies that are having a positive impact on the world.</p>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Australian Ethical</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_australian_ethical_full.png" %>
+  <div class="df w100p">
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_australian_ethical_full.png" %>
+        </div>
+
+        <ul class="provider-checklist">
+          <li>
+            Positive, competitive investments
+          </li>
+
+          <li>
+            Avoid companies involved in anything harmful
+          </li>
+
+          <li>
+            Invest in positive industries such as clean energy and education
+          </li>
+
+          <li>
+            Fastest Growing Super Fund in Australia
+          </li>
+        </ul>
+
+        <p><%= link_to "Choose Australian Ethical", new_switch_path(partner_id: @australian_ethical.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Australian Ethical", partner_path(@australian_ethical), class: "text-s" %></p>
       </div>
-      
-      <p><%= link_to "Choose Australian Ethical", new_switch_path(partner_id: @australian_ethical.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Australian Ethical", partner_path(@australian_ethical), class: "text-s" %></p>
+    </div>
+
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_good_super_full.png" %>
+        </div>
+
+        <ul class="provider-checklist">
+          <li>
+            Positive investments such as sustainable products, clean energy and healthcare
+          </li>
+
+          <li>
+            Avoid damaging and unethical investments
+          </li>
+
+          <li>
+            Quick and simple online switch
+          </li>
+        </ul>
+
+        <p><%= link_to "Choose Good Super", new_switch_path(partner_id: @good_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Good Super", partner_path(@good_super), class: "text-s" %></p>
+      </div>
+    </div>
+
+    <div class="flex p10">
+      <div class="grey-padded h100p df fdc">
+        <div class="tac">
+          <%= image_tag "partner_future_super_full.png" %>
+        </div>
+
+        <ul class="provider-checklist">
+          <li>
+            Australia's ONLY super fund with no investment in fossil fuels
+          </li>
+
+          <li>
+            Switch online now in under 3 minutes
+          </li>
+
+          <li>
+            First carbon neutral certified super fund in the world
+          </li>
+
+          <li>
+            Support only approved, ethical investments
+          </li>
+        </ul>
+
+        <p><%= link_to "Choose Future Super", new_switch_path(partner_id: @future_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Future Super", partner_path(@future_super), class: "text-s" %></p>
+      </div>
     </div>
   </div>
+</div>
+ 
+<div id="switch_homeloans" class="popup" style="display:none;">
+  <div class="close"></div>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Good Super</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_good_super_full.png" %>
-      </div>
-      
-      <p><%= link_to "Choose Good Super", new_switch_path(partner_id: @good_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Good Super", partner_path(@good_super), class: "text-s" %></p>
-    </div>
-  </div>
+  <h2>Switch your homeloan</h2>
+  
+  <p class="col-sm-8 col-sm-offset-2">For most people a home loan is the largest investment they will ever make. Making sure that the money is used by banks who make positive investments is one of the most impactful things that we can do to help create a positive, sustainable society.</p>
+  
+  <div class="clb"></div>
+  
+  <p class="col-sm-8 col-sm-offset-2">Simply fill out the form below and a member of the Ethical Homeloans team will get in touch to discuss the switching process</p>
 
-  <div class="col-sm-4 p10">
-    <div class="grey-padded">
-      <h3>Future Super</h3>
-      
-      <div class="tac">
-        <%= image_tag "partner_future_super_full.png" %>
-      </div>
-      
-      <p><%= link_to "Choose Future Super", new_switch_path(partner_id: @future_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-      
-      <p><%= link_to "Or find out more about Future Super", partner_path(@future_super), class: "text-s" %></p>
-    </div>
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= render 'switches/form', partner: @ethical_homeloans, switch: @switch %>
   </div>
 </div>

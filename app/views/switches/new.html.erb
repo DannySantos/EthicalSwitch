@@ -15,25 +15,7 @@
         <div class="col-sm-6 col-sm-offset-3 mb50">
           <p class="tac">Simply fill out this form and then you will be taken to the <%= @partner.name %> website to complete the switch. It should take less than 5 minutes!</p>
 
-          <%= form_for(@switch) do |f| %>
-            <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
-            <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
-            <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
-            
-            <% if @partner.industry == "homeloans" %>
-              <%= f.text_field :postcode, class: "form-control", placeholder: "Postcode" %>
-            <% else %>
-              <%= f.text_field :phone, class: "form-control", placeholder: "Phone" %>
-            <% end %>
-
-            <%= f.hidden_field :partner_id, value: @partner.id %>
-            <%= f.hidden_field :referrer %>
-            <%= f.hidden_field :charity_id, value: params[:charity_id] ? params[:charity_id] : nil %>
-
-            <div class="tac">
-              <%= f.submit "SWITCH NOW", class: "btn btn-primary btn-padded" %>
-            </div>
-          <% end %>
+          <%= render 'form', partner: @partner, switch: @switch %>
         </div>
       </div>
       
@@ -43,6 +25,5 @@
       
       <%= render "partners/reasons_#{@partner.filename}" %>
     </main>
-    
   </div>
 </div>

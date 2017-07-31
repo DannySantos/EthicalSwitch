@@ -108,3 +108,23 @@ label {
 .yellow-text {
   color: $primary_color;
 }
+
+.df {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  
+  .flex {
+    flex: 1;
+  }
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.fg1 {
+  flex-grow: 1;
+}
