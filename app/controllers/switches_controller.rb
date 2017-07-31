@@ -4,11 +4,13 @@ class SwitchesController < ApplicationController
     @switch = Switch.new
     @message = Message.new if @partner.name == "Powershop"
     @faqs = Faq.all
+    @charities = Charity.current
   end
   
   def create
     @switch = Switch.new(switch_params)
     
+    binding.pry
     if @switch.save
       redirect_to get_redirect_path(@switch)
     else

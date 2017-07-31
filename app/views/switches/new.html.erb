@@ -15,8 +15,9 @@
         <div class="col-sm-6 col-sm-offset-3 mb50">
           <p class="tac">Simply fill out this form and then you will be taken to the <%= @partner.name %> website to complete the switch. It should take less than 5 minutes!</p>
 
-          <%= render 'form', partner: @partner, switch: @switch %>
         </div>
+        
+        <%= render 'form', partner: @partner, switch: @switch %>
       </div>
       
       <div class="clb"></div>
