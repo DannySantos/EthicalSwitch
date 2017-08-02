@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170731115932) do
+ActiveRecord::Schema.define(version: 20170802094905) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,41 @@ ActiveRecord::Schema.define(version: 20170731115932) do
     t.string   "line"
   end
 
+  create_table "power_provider_states", force: :cascade do |t|
+    t.integer  "state_id"
+    t.integer  "power_provider_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.index ["power_provider_id"], name: "index_power_provider_states_on_power_provider_id", using: :btree
+    t.index ["state_id"], name: "index_power_provider_states_on_state_id", using: :btree
+  end
+
+  create_table "power_providers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "major_shareholder"
+    t.string   "major_shareholder_base"
+    t.string   "parent_company"
+    t.string   "primary_fuel_source"
+    t.string   "carbon_emissions"
+    t.string   "renewable_energy"
+    t.boolean  "new_renewable_energy_investment"
+    t.boolean  "no_csg_investment"
+    t.string   "greenpower_available"
+    t.string   "ombudsman_complaints"
+    t.string   "dual_fuel"
+    t.float    "greenpeace_ranking"
+    t.float    "ethical_switch_rating"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  create_table "states", force: :cascade do |t|
+    t.string   "name"
+    t.string   "short_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "switches", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
@@ -72,7 +107,21 @@ ActiveRecord::Schema.define(version: 20170731115932) do
     t.index ["partner_id"], name: "index_switches_on_partner_id", using: :btree
   end
 
+  create_table "termination_fees", force: :cascade do |t|
+    t.integer  "state_id"
+    t.integer  "power_provider_id"
+    t.string   "amount"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.index ["power_provider_id"], name: "index_termination_fees_on_power_provider_id", using: :btree
+    t.index ["state_id"], name: "index_termination_fees_on_state_id", using: :btree
+  end
+
   add_foreign_key "faqs", "faq_categories"
+  add_foreign_key "power_provider_states", "power_providers"
+  add_foreign_key "power_provider_states", "states"
   add_foreign_key "switches", "charities"
   add_foreign_key "switches", "partners"
+  add_foreign_key "termination_fees", "power_providers"
+  add_foreign_key "termination_fees", "states"
 end

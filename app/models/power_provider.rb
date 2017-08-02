@@ -1,0 +1,2 @@
+class PowerProvider < ApplicationRecord
+end

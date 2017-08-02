@@ -263,3 +263,997 @@ Charity.find_or_create_by(
   title: "Can I get a bill comparison?",
   answer: "<p>Yes, if you would like to request a bill comparison then simply send an e-mail to hello@ethicalswitch.com with your name, e-mail address and phone number (optional) and we will be in touch shortly.</p>"
 )
+
+@nsw = State.find_or_create_by(
+  name: "New South Wales",
+  short_name: "NSW"
+)
+
+@vic = State.find_or_create_by(
+  name: "Victoria",
+  short_name: "VIC"
+)
+
+@qld = State.find_or_create_by(
+  name: "Queensland",
+  short_name: "QLD"
+)
+
+@sa = State.find_or_create_by(
+  name: "South Australia",
+  short_name: "SA"
+)
+
+@tas = State.find_or_create_by(
+  name: "Tasmania",
+  short_name: "TAS"
+)
+
+@act = State.find_or_create_by(
+  name: "Australian Capital Territory",
+  short_name: "ACT"
+)
+
+#State.find_or_create_by(
+#  name: "Western Australia",
+#  short_name: "WA"
+#)
+
+#State.find_or_create_by(
+#  name: "Northern Territory",
+#  short_name: "NT"
+#)
+
+@powershop = PowerProvider.find_or_create_by(
+  name: "Powershop",
+  major_shareholder: "New Zealand Government (51%)",
+  major_shareholder_base: "New Zealand",
+  parent_company: 'Meridian Energy',
+  primary_fuel_source: "Wind",
+  carbon_emissions: "0",
+  renewable_energy: "100%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: 88,
+  dual_fuel: false,
+  greenpeace_ranking: 8.6,
+  ethical_switch_rating: 5,
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @vic.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @qld.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @nsw.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @sa.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @act.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powershop.id,
+  state_id: @tas.id,
+  amount: "No lock-in contracts"
+)
+
+@diamond_energy = PowerProvider.find_or_create_by(
+  name: "Diamond Energy",
+  major_shareholder: "Diamond Management Team (58%), SunPower Corporation (42% in 2012)",
+  major_shareholder_base: "Australia/USA",
+  parent_company: 'Diamond Energy',
+  primary_fuel_source: "Solar",
+  carbon_emissions: "0",
+  renewable_energy: "100%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: 14,
+  dual_fuel: false,
+  greenpeace_ranking: 8.5,
+  ethical_switch_rating: 5
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @vic.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @qld.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @vic.id,
+  amount: "$0-$22"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @nsw.id,
+  amount: "$0-$22"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @sa.id,
+  amount: "$0-$22"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @diamond_energy.id,
+  state_id: @qld.id,
+  amount: "$0-$22"
+)
+
+@energy_locals = PowerProvider.find_or_create_by(
+  name: "Energy Locals",
+  major_shareholder: "Adrian Merrick",
+  major_shareholder_base: "Australia",
+  parent_company: 'Energy Locals',
+  primary_fuel_source: "-",
+  carbon_emissions: "No Generation",
+  renewable_energy: "No Generation",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: nil,
+  dual_fuel: false,
+  greenpeace_ranking: nil,
+  ethical_switch_rating: 5
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_locals.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_locals.id,
+  state_id: @nsw.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_locals.id,
+  state_id: @qld.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_locals.id,
+  state_id: @nsw.id,
+  amount: "$0"
+)
+
+@origin = PowerProvider.find_or_create_by(
+  name: "Origin Energy",
+  major_shareholder: "HSBC Custody Nominees (Australia) Limited (20.3%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Origin Energy',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "25,700",
+  renewable_energy: "10%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: false,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "20,300",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 5.7,
+  ethical_switch_rating: 1,
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @act.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @qld.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @nsw.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @vic.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @sa.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @origin.id,
+  state_id: @act.id,
+  amount: "$0"
+)
+
+@agl = PowerProvider.find_or_create_by(
+  name: "AGL Energy",
+  major_shareholder: "HSBC Custody Nominees (Australia) Limited (18.36%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'AGL Energy',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "38,838",
+  renewable_energy: "18%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: false,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "21,700",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 5.1,
+  ethical_switch_rating: 1,
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @nsw.id,
+  amount: "$50 - $75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @qld.id,
+  amount: "$50 - $75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @sa.id,
+  amount: "$50 - $75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @agl.id,
+  state_id: @vic.id,
+  amount: "$50 - $75"
+)
+
+@energy_australia = PowerProvider.find_or_create_by(
+  name: "Energy Australia",
+  major_shareholder: "Sir Michael Kadoorie Family (35%)",
+  major_shareholder_base: "Hong Kong",
+  parent_company: 'CLP Holdings',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "22,496",
+  renewable_energy: "11%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "11,300",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 4.9,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @act.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @vic.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @nsw.id,
+  amount: "$90"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @qld.id,
+  amount: "$90"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @sa.id,
+  amount: "$90"
+)
+
+@ergon = PowerProvider.find_or_create_by(
+  name: "Ergon Energy",
+  major_shareholder: "QLD Government (100%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Ergon Energy',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "35,528",
+  renewable_energy: "14%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: false,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "700",
+  dual_fuel: false,
+  greenpeace_ranking: 4.6,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @ergon.id,
+  state_id: @qld.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @ergon.id,
+  state_id: @qld.id,
+  amount: "-"
+)
+
+@lumo = PowerProvider.find_or_create_by(
+  name: "Lumo",
+  major_shareholder: "NSW Government (58%),  VIC Government (29%),  Commonwealth Government (13%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Snowy Hydro',
+  primary_fuel_source: "Hydro",
+  carbon_emissions: "2,700",
+  renewable_energy: "73%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "10%",
+  ombudsman_complaints: "3,000",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 5.9,
+  ethical_switch_rating: 2
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @vic.id,
+  amount: "$80"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @nsw.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @qld.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @lumo.id,
+  state_id: @sa.id,
+  amount: "$75"
+)
+
+@red = PowerProvider.find_or_create_by(
+  name: "Red Energy",
+  major_shareholder: "NSW Government (58%),  VIC Government (29%),  Commonwealth Government (13%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Snowy Hydro',
+  primary_fuel_source: "Hydro",
+  carbon_emissions: "1,300",
+  renewable_energy: "73%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "1,600",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 6.0,
+  ethical_switch_rating: 3
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @vic.id,
+  amount: "$45-$90"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @nsw.id,
+  amount: "$45-$90"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @red.id,
+  state_id: @sa.id,
+  amount: "$45-$90"
+)
+
+@momentum = PowerProvider.find_or_create_by(
+  name: "Momentum",
+  major_shareholder: "TAS Government (100%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Hydro Tasmania',
+  primary_fuel_source: "Hydro",
+  carbon_emissions: "13",
+  renewable_energy: "94%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "1,100",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 6.9,
+  ethical_switch_rating: 4
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @vic.id,
+  amount: "$20"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @nsw.id,
+  amount: "$49.50 - $99"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @qld.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @sa.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @momentum.id,
+  state_id: @act.id,
+  amount: "$20"
+)
+
+@aurora = PowerProvider.find_or_create_by(
+  name: "Aurora Energy",
+  major_shareholder: "TAS Government (100%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Aurora Energy',
+  primary_fuel_source: "Hydro",
+  carbon_emissions: "13",
+  renewable_energy: "94%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "500",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 6.5,
+  ethical_switch_rating: 4
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @aurora.id,
+  state_id: @tas.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @aurora.id,
+  state_id: @tas.id,
+  amount: "-"
+)
+
+@simply = PowerProvider.find_or_create_by(
+  name: "Simply Energy",
+  major_shareholder: "Engie (71%) & Mitsui & Co Ltd (28%)",
+  major_shareholder_base: "France/Japan",
+  parent_company: 'Engie',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "27,466",
+  renewable_energy: "1%",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "3,200",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 2.9,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @vic.id,
+  amount: "$22 - $77"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @nsw.id,
+  amount: "$$75 - $95"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @qld.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @simply.id,
+  state_id: @sa.id,
+  amount: "$49.50 - $104.50"
+)
+
+@alinta = PowerProvider.find_or_create_by(
+  name: "Alinta Energy",
+  major_shareholder: "TPG Capital Private Equity",
+  major_shareholder_base: "USA",
+  parent_company: 'Alinta',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "4,004",
+  renewable_energy: "9%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: true,
+  greenpower_available: "No",
+  ombudsman_complaints: "900",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 3.4,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @alinta.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @alinta.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @alinta.id,
+  state_id: @vic.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @alinta.id,
+  state_id: @sa.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @alinta.id,
+  state_id: @qld.id,
+  amount: "$75"
+)
+
+@powerdirect = PowerProvider.find_or_create_by(
+  name: "Powerdirect",
+  major_shareholder: "HSBC Custody Nominees (Australia) Limited (18.36%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'AGL Energy',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "38,838",
+  renewable_energy: "18%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: false,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "21,700",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 4.7,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @vic.id,
+  amount: "$20"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @act.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @nsw.id,
+  amount: "$48"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @qld.id,
+  amount: "$48"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @powerdirect.id,
+  state_id: @sa.id,
+  amount: "$48"
+)
+
+@actew = PowerProvider.find_or_create_by(
+  name: "Actew AGL",
+  major_shareholder: "ACT Government (50%) AGL Energy (50%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'Actew Corporation/AGL Energy',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "38,838",
+  renewable_energy: "18%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: false,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "21,700",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 5.8,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @actew.id,
+  state_id: @act.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @actew.id,
+  state_id: @nsw.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @actew.id,
+  state_id: @act.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @actew.id,
+  state_id: @nsw.id,
+  amount: "$50"
+)
+
+@dodo = PowerProvider.find_or_create_by(
+  name: "Dodo",
+  major_shareholder: "HSBC Custody Nominees (Australia) Limited (11.5%)",
+  major_shareholder_base: "Australia",
+  parent_company: 'M2',
+  primary_fuel_source: "-",
+  carbon_emissions: "No Generation",
+  renewable_energy: "No Generation",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "Yes",
+  ombudsman_complaints: "600",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 4.9,
+  ethical_switch_rating: 2
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @sa.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @vic.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @nsw.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @qld.id,
+  amount: "No lock-in contracts"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @dodo.id,
+  state_id: @sa.id,
+  amount: "No lock-in contracts"
+)
+
+@click = PowerProvider.find_or_create_by(
+  name: "Click Energy",
+  major_shareholder: "Angeleno Group Private Equity, Robeco Sam Private Equity, Cleantech Ventures",
+  major_shareholder_base: "Australia/USA/Switzerland",
+  parent_company: 'Click Energy',
+  primary_fuel_source: "-",
+  carbon_emissions: "No Generation",
+  renewable_energy: "No Generation",
+  new_renewable_energy_investment: false,
+  no_csg_investment: true,
+  greenpower_available: "25%",
+  ombudsman_complaints: "1,000",
+  dual_fuel: false,
+  greenpeace_ranking: 4.7,
+  ethical_switch_rating: 2
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @nsw.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @qld.id
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @vic.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @nsw.id,
+  amount: "$0"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @click.id,
+  state_id: @qld.id,
+  amount: "$0"
+)
+
+@neighbourhood = PowerProvider.find_or_create_by(
+  name: "Neighbourhood",
+  major_shareholder: "TPG Capital Private Equity",
+  major_shareholder_base: "USA",
+  parent_company: 'Alinta',
+  primary_fuel_source: "Coal",
+  carbon_emissions: "4,004",
+  renewable_energy: "9%",
+  new_renewable_energy_investment: true,
+  no_csg_investment: true,
+  greenpower_available: "No",
+  ombudsman_complaints: "900",
+  dual_fuel: "Yes",
+  greenpeace_ranking: 3.4,
+  ethical_switch_rating: 1
+)
+
+PowerProviderState.find_or_create_by(
+  power_provider_id: @neighbourhood.id,
+  state_id: @vic.id
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @neighbourhood.id,
+  state_id: @vic.id,
+  amount: "$50"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @neighbourhood.id,
+  state_id: @vic.id,
+  amount: "$75"
+)
+
+TerminationFee.find_or_create_by(
+  power_provider_id: @neighbourhood.id,
+  state_id: @vic.id,
+  amount: "$50"
+)
