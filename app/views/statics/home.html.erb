@@ -89,23 +89,15 @@
       <h3 class="fwn">How ethical is your power company?</h3>
     </div>
 
-    <form method="post" action="ethical-power-results">
+    <%= form_tag(power_providers_path, method: :get) do %>
       <div class="col-sm-3">
-        <select class="form-control di" name="state">
-          <option value="default" class="dropdown-default">Select a State...</option>
-          <option value="act">ACT</option>
-          <option value="nsw">NSW</option>
-          <option value="qld">QLD</option>
-          <option value="sa">SA</option>
-          <option value="tas">TAS</option>
-          <option value="vic">VIC</option>
-        </select>
+        <%= select_tag :state_id, options_from_collection_for_select(@states, "id", "short_name"), prompt: "Select State...", class: "form-control di" %>
       </div>
-
+      
       <div class="col-sm-3 tal">
-        <input type="submit" name="power-submit" id="power-submit" class="btn btn-primary" value="Find Out Now">
+        <%= submit_tag "Find Out Now", class: "btn btn-primary" %>
       </div>
-    </form>
+    <% end %>
   </div>
   
   <div class="clb"></div>

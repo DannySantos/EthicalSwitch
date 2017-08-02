@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   
   get '/terms_and_conditions', to: 'statics#terms_and_conditions'
   get '/privacy_policy', to: 'statics#privacy_policy'
+  get '/criteria_table_info', to: 'statics#criteria_table_info'
   
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]

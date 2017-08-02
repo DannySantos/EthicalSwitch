@@ -1248,12 +1248,12 @@ TerminationFee.find_or_create_by(
 
 TerminationFee.find_or_create_by(
   power_provider_id: @neighbourhood.id,
-  state_id: @vic.id,
+  state_id: @qld.id,
   amount: "$75"
 )
 
 TerminationFee.find_or_create_by(
   power_provider_id: @neighbourhood.id,
-  state_id: @vic.id,
+  state_id: @sa.id,
   amount: "$50"
 )

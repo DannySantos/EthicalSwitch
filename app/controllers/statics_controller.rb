@@ -2,6 +2,7 @@ class StaticsController < ApplicationController
   def home
     @charities = Charity.current.order("created_at DESC")
     @switch = Switch.new
+    @states = State.all
     
     assign_partner_variables
   end
