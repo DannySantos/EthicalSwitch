@@ -8,6 +8,7 @@ class SwitchesController < ApplicationController
   end
   
   def create
+    binding.pry
     @switch = Switch.new(switch_params)
     
     if @switch.save

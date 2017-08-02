@@ -13,16 +13,16 @@
     <div class="tac mb20">
       <p><strong>How did you hear about us?</strong></p>
 
-      <%= f.radio_button :referrer, 0, checked: true, class: 'di' %> 
+      <%= f.radio_button :referrer, 'facebook', checked: true, class: 'di' %> 
       <%= f.label :referrer, "Facebook", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 1, class: 'di' %>
+      <%= f.radio_button :referrer, 'email', class: 'di' %>
       <%= f.label :referrer, "Email", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 2, class: 'di' %>
+      <%= f.radio_button :referrer, 'charity', class: 'di' %>
       <%= f.label :referrer, "Through a charity", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 3, class: 'di' %>
+      <%= f.radio_button :referrer, 'other', class: 'di' %>
       <%= f.label :referrer, "Other", class: 'di mr20' %>
     </div>
   </div>
@@ -52,7 +52,6 @@
   </div>
   
   <%= f.hidden_field :partner_id, value: partner.id %>
-  <%= f.hidden_field :referrer %>
   <%= f.hidden_field :charity_id, value: params[:charity_id] ? params[:charity_id] : nil %>
 
   <div class="tac">
