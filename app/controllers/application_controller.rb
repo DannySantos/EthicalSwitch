@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
     @future_super = Partner.find_by(name: "Future Super")
     @ethical_homeloans = Partner.find_by(name: "Ethical Homeloans")
   end
+
+  def after_sign_in_path_for(resource)
+    admin_path
+  end
 end

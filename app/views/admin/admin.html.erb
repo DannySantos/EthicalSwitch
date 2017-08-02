@@ -1,0 +1,29 @@
+<div class="admin row">
+  <div class="switches col-sm-10 col-sm-offset-1 mb40">
+    <h2 class="mb20">Switchers</h2>
+    
+    <table class="w100p">
+      <thead>
+        <tr class="tal">
+          <th class="col-sm-2">Name</th>
+          <th class="col-sm-3">Email</th>
+          <th class="col-sm-2">Postcode/Phone</th>
+          <th class="col-sm-3">Charity Choice</th>
+          <th class="col-sm-2">Partner Choice</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <%= render @switches %>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="messages col-sm-10 col-sm-offset-1">
+    <h2 class="mb20">Messages</h2>
+    
+    <div class="row">
+      <%= render @messages %>
+    </div>
+  </div>
+</div>

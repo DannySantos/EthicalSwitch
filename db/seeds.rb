@@ -1,40 +1,40 @@
-Partner.find_or_create_by(
+@partner_powershop = Partner.find_or_create_by(
   name: "Powershop",
   industry: 0,
   line: "Australia’s Greenest Power Company (Greenpeace 2014 & 2015)"
 )
 
-Partner.find_or_create_by(
+@partner_energy_locals = Partner.find_or_create_by(
   name: "Energy Locals",
   industry: 0,
   line: "Social enterprise offering Australia's fairest energy, with half the profit put into communities and new, local renewable energy"
 )
 
-Partner.find_or_create_by(
+@partner_diamond_energy = Partner.find_or_create_by(
   name: "Diamond Energy",
   industry: 0,
   line: "Passionate about renewables"
 )
 
-Partner.find_or_create_by(
+@partner_good_super = Partner.find_or_create_by(
   name: "Good Super",
   industry: 1,
   line: "Use your super to change the world. Join the Good Super movement. It's quick, simple &amp; rewarding."
 )
 
-Partner.find_or_create_by(
+@partner_aus_eth = Partner.find_or_create_by(
   name: "Australian Ethical",
   industry: 1,
   line: "Join over 33,000 Australians who have chosen the super fund that’s good for the planet, people and animals."
 )
 
-Partner.find_or_create_by(
+@partner_future_super = Partner.find_or_create_by(
   name: "Future Super",
   industry: 1,
   line: "Switch to Australia's ONLY super fund with absolutely no investment in fossil fuels."
 )
 
-Partner.find_or_create_by(
+@partner_ethical_homeloans = Partner.find_or_create_by(
   name: "Ethical Homeloans",
   industry: 2,
   line: ""
@@ -124,7 +124,7 @@ Charity.find_or_create_by(
   status: "current"
 )
 
-Charity.find_or_create_by(
+@green_pledge = Charity.find_or_create_by(
   name: "The Green Pledge",
   short_name: "The Green Pledge",
   description: "Over one week in September, commit to taking 3 actions on climate change to kickstart lasting change in how we use energy resources.",
@@ -138,7 +138,7 @@ Charity.find_or_create_by(
   status: "current"
 )
 
-Charity.find_or_create_by(
+@ms = Charity.find_or_create_by(
   name: "MS Australia",
   short_name: "MS Australia",
   description: "Raising mondey and awareness for sufferers of MS.",
@@ -1256,4 +1256,55 @@ TerminationFee.find_or_create_by(
   power_provider_id: @neighbourhood.id,
   state_id: @sa.id,
   amount: "$50"
+)
+
+Message.find_or_create_by(
+  name: "Mr Test Man", 
+  email: "testman@fake.com", 
+  postcode: "9456", 
+  message: "Hey I just wanted to show you what a message would look like in the admin panel."
+)
+
+Message.find_or_create_by(
+  name: "Mr Test Man", 
+  email: "testman@fake.com", 
+  postcode: "9456", 
+  message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatibus ipsum illo, ad minus deleniti recusandae quas sunt rem velit cumque, debitis fuga provident, sint voluptate! Alias non saepe corrupti."
+)
+
+Message.find_or_create_by(
+  name: "Mr Test Man", 
+  email: "testman@fake.com", 
+  postcode: "9456", 
+  message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatibus ipsum illo, ad minus deleniti recusandae quas sunt rem velit cumque, debitis fuga provident, sint voluptate!."
+)
+
+Switch.find_or_create_by(
+  first_name: "Test",
+  last_name: "Man",
+  email: "testman@fake.com",
+  phone: "07777 777777", 
+  partner_id: @partner_powershop.id, 
+  charity_id: nil,
+  referrer: 0
+)
+
+Switch.find_or_create_by(
+  first_name: "Test",
+  last_name: "Man",
+  email: "testman@fake.com",
+  phone: "07777 777777", 
+  partner_id: @partner_energy_locals.id, 
+  charity_id: @ms.id,
+  referrer: 2
+)
+
+Switch.find_or_create_by(
+  first_name: "Test",
+  last_name: "Man",
+  email: "testman@fake.com",
+  phone: "07777 777777", 
+  partner_id: @partner_future_super.id, 
+  charity_id: @green_pledge.id,
+  referrer: 2
 )

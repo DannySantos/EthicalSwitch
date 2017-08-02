@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users
   
   root to: 'statics#home'
   
   get '/terms_and_conditions', to: 'statics#terms_and_conditions'
   get '/privacy_policy', to: 'statics#privacy_policy'
   get '/criteria_table_info', to: 'statics#criteria_table_info'
+  get '/admin', to: 'admin#admin'
   
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]

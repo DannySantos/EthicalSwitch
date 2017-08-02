@@ -1,0 +1,7 @@
+<tr>
+  <td class="col-sm-2"><%= switch.first_name %> <%= switch.last_name %></td>
+  <td class="col-sm-3"><%= switch.email %></td>
+  <td class="col-sm-2"><%= switch.phone ? switch.phone : switch.postcode %></td>
+  <td class="col-sm-3"><%= switch.charity ? switch.charity.name : "None" %></td>
+  <td class="col-sm-2"><%= switch.partner.name %></td>
+</tr>

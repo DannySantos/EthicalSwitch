@@ -1,0 +1,22 @@
+<div class="highlight-bg row text-white tac pt20 pb20 mb40">
+  <h1>Log in</h1>
+</div>
+
+<div class="col-sm-4 col-sm-offset-4">
+  
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, class: "form-control" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+    </div>
+
+    <div class="actions tac mb50">
+      <%= f.submit "Log in", class: "btn btn-primary btn-padded" %>
+    </div>
+  <% end %>
+</div>
