@@ -18,7 +18,7 @@
   <%= f.label :message, "Message*" %>
   <%= f.text_area :message, class: "form-control" %>
 
-  <%= f.hidden_field :bill_compare, value: true if bill_compare %>
+  <%= f.hidden_field :bill_comparison, value: true if bill_compare %>
 
   <div class="tac">
     <%= f.submit "Send", class: "btn btn-primary btn-padded" %>
