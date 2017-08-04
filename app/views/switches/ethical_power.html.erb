@@ -1,12 +1,26 @@
 <section class="banner row flex-center" style="background-image:url(<%= image_url "banner_power.jpg" %>)">
+  <div class="faded-black row tac pt40 pb40">
+    <h1>Ethical <span class="yellow-text">Power</span></h1>
+  </div>
 </section>
 
 <section class="mb40">
-  <%= render 'statics/switch_options_power' %>
+  <h2 class="tac mb20 mt20">Choose a more ethical power provider</h2>
+  
+  <p class="tac">We have done the research and found Australias 3 most ethical power providers:</p>
+  
+  <div class="col-sm-10 col-sm-offset-1">
+    <%= render 'statics/switch_options_power' %>
+  </div>
+  
+  <div class="clb"></div>
 </section>
 
 <section class="mb40">
-  <h2 class="mb40 tac">Ethical Switch power provider criteria table</h2>
+  <div class="highlight-bg row tac text-white pt30 pb30">
+    <h2>Our Power Provider Criteria</h2>
+  </div>
+  
   <%= render 'power_providers/criteria_table' %>
 </section>
 

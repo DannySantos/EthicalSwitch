@@ -1,7 +1,7 @@
 @import 'variables';
 
 .banner {
-  height: 427px;
+  height: 300px;
   background-color: #333;
   background-size: cover;
   background-position: center;
@@ -10,6 +10,21 @@
     font-size: 1.4em;
     color: #333;
     margin-bottom: 20px;
+  }
+  
+  .faded-black h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: normal;
+  }
+  
+  .faded-black h2 {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: normal;
   }
   
   p {
@@ -37,4 +52,8 @@
       background-color: $primary_color_highlight;
     }
   }
+}
+
+.banner-tall {
+  height: 427px;
 }

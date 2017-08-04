@@ -1,14 +1,17 @@
 <div id="power_criteria_container">
-  <div class="highlight-bg row pt20 pb20 tac text-white">
-    <h3>Showing Results for <%= @state ? @state.short_name : "Australia" %>:</h3>
-  </div>
+  <% unless action_name == "ethical_power" %>
+    <div class="highlight-bg row pt20 pb20 tac text-white">
+      <h3>Showing Results for <%= @state ? @state.short_name : "Australia" %>:</h3>
+    </div>
+  <% end %>
   
   <div class="row grey-bg pt5 pb5">
     <%= form_tag(change_state_path, remote: true) do %>
       <div class="tac" style="line-height:40px;">
-        Change state: 
+        
+        <%= @state ? "Change state:" : "Filter by state:" %>
       
-        <%= select_tag :state_id, options_from_collection_for_select(State.all, "id", "short_name"), prompt: "Select State...", class: "form-control di w200 mb0" %>
+        <%= select_tag :state_id, options_from_collection_for_select(State.all, "id", "short_name", selected: @state ? @state.id : nil), prompt: "Select State...", class: "form-control di w200 mb0" %>
       </div>
     <% end %>
     

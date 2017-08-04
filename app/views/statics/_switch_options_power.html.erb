@@ -1,4 +1,4 @@
-<div class="df w100p">
+<div class="df w100p switch_options tac">
   <div class="flex p10">
     <div class="grey-padded h100p df fdc">
       <div class="tac">
@@ -31,8 +31,11 @@
       </ul>
 
       <div>
+        <% if @state && (@state.short_name == "VIC" || @state.short_name == "NSW" || @state.short_name == "QLD") %>
+          <p class="text-success">Available in <%= @state.name %>!</p>
+        <% end %>
+        
         <p class="mt0"><%= link_to "Choose Powershop", new_switch_path(partner_id: @powershop.id, charity_id: (@charity && @charity.name != "Healthy Futures") ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
-
         <p><%= link_to "Or find out more about Powershop", partner_path(@powershop), class: "text-s" %></p>
       </div>
     </div>
@@ -69,6 +72,10 @@
       </ul>
 
       <div>
+        <% if @state && (@state.short_name == "NSW" || @state.short_name == "QLD") %>
+          <p class="text-success">Available in <%= @state.name %>!</p>
+        <% end %>
+        
         <p><%= link_to "Choose Energy Locals", new_switch_path(partner_id: @energy_locals.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
 
         <p><%= link_to "Or find out more about Energy Locals", partner_path(@energy_locals), class: "text-s" %></p>
@@ -103,6 +110,10 @@
       </ul>
 
       <div>
+        <% if @state && (@state.short_name == "VIC" || @state.short_name == "NSW" || @state.short_name == "QLD" || @state.short_name == "SA") %>
+          <p class="text-success">Available in <%= @state.name %>!</p>
+        <% end %>
+        
         <p><%= link_to "Choose Diamond Energy", new_switch_path(partner_id: @diamond_energy.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
 
         <p><%= link_to "Or find out more about Diamond Energy", partner_path(@diamond_energy), class: "text-s" %></p>
