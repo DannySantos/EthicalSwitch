@@ -46,15 +46,26 @@ label {
   display: block;
 }
 
+sup {
+  background-color: $highlight-color;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 6px 2px 6px;
+  font-size: 0.5em;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
-  align-items: center; 
   flex-direction: column;
 }
 
-.faded {
+.faded-black {
   background-color: rgba(0,0,0,0.4);
+}
+
+.faded-white {
+  background-color: rgba(256,256,256,0.8);
 }
 
 .faded-blue {
@@ -68,6 +79,14 @@ label {
 
 .grey-bg {
   background-color: #eaeaea;
+}
+
+.light-grey-bg {
+  background-color: #efefef;
+}
+
+.teal-pattern-bg {
+  background-image: image-url("bg_diagonal");
 }
 
 .italic {
@@ -102,9 +121,16 @@ label {
   padding: 20px 15px 15px 10px;
 }
 
+.shadowed-padded {
+  background-color: #fff;
+  padding: 20px 15px 15px 10px;
+  box-shadow: 1px 2px 12px #c3c3c3, -2px 1px 12px #eaeaea;
+}
+
 .text-light-green {
   color: #40AE49;
 }
+
 .yellow-text {
   color: $primary_color;
 }
@@ -137,3 +163,25 @@ img[alt=Help] {
 .text-success {
   color: green;
 }
+
+.text-m {
+  font-size: 1em !important;
+}
+
+.listdc {
+  list-style-type: decimal;
+}
+
+.brdr-grey {
+  border: 1px solid #e0e0e0;
+}
+
+.error-text {
+  color: #bd1d1d;
+  font-size: 0.8em;
+}
+
+.bxsh {
+  box-shadow: 1px 1px 5px #c3c3c3;
+}
+// fz01em fz08em fz12em etc

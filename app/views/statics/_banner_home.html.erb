@@ -1,0 +1,42 @@
+<section class="banner row flex-center" style="background-image:url(<%= image_url "banner_home.jpg" %>)">
+  <div class="faded-white col-sm-6 col-sm-offset-3 tac p30">
+    <h1>Switch to the companies that deserve your money</h1>
+    
+    <div class="row">
+      <%= form_tag(home_switch_path, method: :post) do %>
+        <div class="col-sm-6 col-sm-offset-3">
+          <%= select_tag :state_id, options_from_collection_for_select(State.all, "id", "short_name"), prompt: "Select State...", class: "form-control di mb0" %>
+          
+          <div id="state_error" class="error-text mt20" style="display:none"></div>
+        </div>
+        
+        <%= hidden_field_tag :switch_type %>
+
+        <div class="clb"></div>
+
+        <p>Choose a switch type to get started:</p>
+
+        <div class="col-sm-4 p10">
+          <div class="btn-switch-icon" data-switch-type="power">
+            <%= image_tag "icon_power.png" %>
+            <p class="text-m">Power Provider</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p10">
+          <div class="btn-switch-icon" data-switch-type="super">
+            <%= image_tag "icon_super.png" %>
+            <p class="text-m">Super Fund</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 p10">
+          <div class="btn-switch-icon" data-switch-type="homeloan">
+            <%= image_tag "icon_homeloans.png" %>
+            <p class="text-m">Home Loan</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<div class="highlight-bg row white-text pt20 pb20 tac mb40">
+  <div class="lh50 col-sm-8 col-sm-offset-2">
+    <div class="col-sm-6 tar">
+      <h3 class="fwn">How ethical is your power company?</h3>
+    </div>
+
+    <%= form_tag(power_providers_path, method: :get) do %>
+      <div class="col-sm-3">
+        <%= select_tag :state_id, options_from_collection_for_select(@states, "id", "short_name"), prompt: "Select State...", class: "form-control di" %>
+      </div>
+      
+      <div class="col-sm-3 tal">
+        <%= submit_tag "Find Out Now", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="clb"></div>
+</div>

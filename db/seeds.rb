@@ -671,6 +671,12 @@ TerminationFee.find_or_create_by(
   amount: "$90"
 )
 
+TerminationFee.find_or_create_by(
+  power_provider_id: @energy_australia.id,
+  state_id: @act.id,
+  amount: "$90"
+)
+
 @ergon = PowerProvider.find_or_create_by(
   name: "Ergon Energy",
   major_shareholder: "QLD Government (100%)",

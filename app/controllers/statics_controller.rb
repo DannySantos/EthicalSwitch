@@ -14,4 +14,15 @@ class StaticsController < ApplicationController
   def privacy_policy
     
   end
+  
+  def home_switch
+    case params[:switch_type]
+    when "power"
+      redirect_to ethical_power_switches_path(state_id: params[:state_id])
+    when "super"
+      redirect_to ethical_super_switches_path(state_id: params[:state_id])
+    when "homeloan"
+      redirect_to ethical_homeloans_switches_path(state_id: params[:state_id])
+    end
+  end
 end

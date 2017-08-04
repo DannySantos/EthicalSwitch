@@ -1,49 +1,181 @@
-<section class="row mb40">
-  <div class="col-sm-10 col-sm-offset-1 tac">
-    <h2 class="mb20">What Makes an Ethical Company?</h2>
+<section class="row pb50 pt50">
+  <h2 class="mb20 tac">What Makes an Ethical Company?</h2>
 
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_1.png" %>
-
-      <p><strong>Environmental Impact</strong></p>
-
-      <p>
-        Carbon offsetting, paperless billing, investment in renewable energy - we consider anything that has an impact on the environment
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_2.png" %>
-
-      <p><strong>Value for Money</strong></p>
-
-      <p>
-        Are the prices fair? Are all of the costs transparent? We find you the best deals on products/services that have a positive impact
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_3.png" %>
-
-      <p><strong>Customer Experience</strong></p>
-
-      <p>
-        Are there hidden fees or lock-in contracts? Are they easy to contact and pleasant to talk to? We value the way a company treats 
-        its customers
-      </p>
-    </div>
-
-    <div class="col-sm-3">
-      <%= image_tag "icon_criteria_4.png" %>
-
-      <p><strong>Reputation &amp; Endorsements</strong></p>
-
-      <p>
-        What are people saying about the companies you buy from? Have they received endorsements from reputable sources? We like to find the 
-        companies that have
-      </p>
-    </div>
+  <div class="col-sm-8 col-sm-offset-2 mb20 tac">
+    We believe that the money you spend every day can have a <strong>positive effect</strong> and that you have the right to know that your money <strong>isn't doing any harm</strong>. We find the companies that tick these boxes whilst still being affordable with a great customer experience. Individually, here are just some of the factors we consider:
   </div>
-  
-  <div class="clb"></div>
+
+  <div id="switches" class="tac por pl20 pr20">
+    <%= render 'statics/popups' %>
+
+    <div class="col-sm-4 p10">
+      <div class="brdr-grey bxsh pl15 pr15 pt20 pb15 white-bg">
+        <h3 class="mb20">Power providers</h3>
+
+        <div class="col-sm-4 col-sm-offset-4">
+          <%= image_tag "icon_power.png", class: "w100p" %>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <div class="text-s">
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Renewable Energy</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_leaf.png", class: "w80p" %>
+            <p>Carbon Emissions</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_csg.png", class: "w80p" %>
+            <p>No CSG investment</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_ombudsman.png", class: "w80p" %>
+            <p>Ombudsman complaints</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_smiley.png", class: "w80p" %>
+            <p>Customer experience</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_contract.png", class: "w80p" %>
+            <p>Favourable contracts</p>
+          </div>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <p class="mb10">
+          <%= link_to "Choose a Provider", "#switches", class: "btn btn-primary btn-padded popup_reveal", id: "switch_power_button" %>
+        </p>
+
+        <p class="text-s">
+          <%= link_to "Or find out more", ethical_power_switches_path %>
+        </p>
+
+        <div class="clb"></div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 p10">
+      <div class="brdr-grey bxsh pl15 pr15 pt20 pb15 white-bg">
+        <h3 class="mb20">Super Funds</h3>
+
+        <div class="col-sm-4 col-sm-offset-4">
+          <%= image_tag "icon_super.png", class: "w100p" %>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <div class="text-s">
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Renewable Energy</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_leaf.png", class: "w80p" %>
+            <p>Carbon Emissions</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>No CSG investment</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Ombudsman complaints</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Customer experience</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Favourable contracts</p>
+          </div>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <p class="mb10">
+          <%= link_to "Choose a Provider", "#switches", class: "btn btn-primary btn-padded popup_reveal", id: "switch_super_button" %>
+        </p>
+
+        <p class="text-s">
+          <%= link_to "Or find out more", ethical_super_switches_path %>
+        </p>
+
+        <div class="clb"></div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 p10">
+      <div class="brdr-grey bxsh pl15 pr15 pt20 pb15 white-bg">
+        <h3 class="mb20">Home loans <sup>new!</sup></h3>
+
+        <div class="col-sm-4 col-sm-offset-4">
+          <%= image_tag "icon_homeloans.png", class: "w100p" %>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <div class="text-s">
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Renewable Energy</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_leaf.png", class: "w80p" %>
+            <p>Carbon Emissions</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>No CSG investment</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Ombudsman complaints</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Customer experience</p>
+          </div>
+
+          <div class="col-sm-4">
+            <%= image_tag "reasons_renewable.png", class: "w80p" %>
+            <p>Favourable contracts</p>
+          </div>
+        </div>
+
+        <div class="clb mb20"></div>
+
+        <p class="mb10">
+          <%= link_to "Register Interest", "#switches", class: "btn btn-primary btn-padded popup_reveal", id: "switch_homeloans_button" %>
+        </p>
+
+        <p class="text-s">
+          <%= link_to "Or find out more", ethical_homeloans_switches_path %>
+        </p>
+
+        <div class="clb"></div>
+      </div>
+    </div>
+
+    <div class="clb"></div>
+  </div>
 </section>

@@ -15,6 +15,10 @@ class PowerProvider < ApplicationRecord
     self.filename == "origin_energy" || self.filename == "agl_energy" || self.filename == "energy_australia"
   end
   
+  def prechecked?(state)
+    self.partner? || self.dirty_three? || (self.filename == "aurora_energy" && (state && state.short_name == "TAS"))
+  end
+  
   def extra_details(provider_name)
     case provider_name
     when "powershop"

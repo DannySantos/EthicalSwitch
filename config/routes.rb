@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/privacy_policy', to: 'statics#privacy_policy'
   get '/criteria_table_info', to: 'statics#criteria_table_info'
   get '/admin', to: 'admin#admin'
+  post '/home_switch', to: 'statics#home_switch'
+  post '/change_state', to: 'power_providers#change_state'
   
   resources :faqs, only: [:index]
   resources :messages, only: [:new, :create]

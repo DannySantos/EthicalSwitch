@@ -1,0 +1,87 @@
+<div class="df w100p">
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_australian_ethical_full.png" %>
+      </div>
+
+      <ul class="provider-checklist">
+        <li>
+          Positive, competitive investments
+        </li>
+
+        <li>
+          Avoid companies involved in anything harmful
+        </li>
+
+        <li>
+          Invest in positive industries such as clean energy and education
+        </li>
+
+        <li>
+          Fastest Growing Super Fund in Australia
+        </li>
+      </ul>
+
+      <p><%= link_to "Choose Australian Ethical", new_switch_path(partner_id: @australian_ethical.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+      <p><%= link_to "Or find out more about Australian Ethical", partner_path(@australian_ethical), class: "text-s" %></p>
+    </div>
+  </div>
+
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_good_super_full.png" %>
+      </div>
+
+      <ul class="provider-checklist">
+        <li>
+          Positive investments such as sustainable products, clean energy and healthcare
+        </li>
+
+        <li>
+          Avoid damaging and unethical investments
+        </li>
+
+        <li>
+          Quick and simple online switch
+        </li>
+      </ul>
+
+      <p><%= link_to "Choose Good Super", new_switch_path(partner_id: @good_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+      <p><%= link_to "Or find out more about Good Super", partner_path(@good_super), class: "text-s" %></p>
+    </div>
+  </div>
+
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_future_super_full.png" %>
+      </div>
+
+      <ul class="provider-checklist">
+        <li>
+          Australia's ONLY super fund with no investment in fossil fuels
+        </li>
+
+        <li>
+          Switch online now in under 3 minutes
+        </li>
+
+        <li>
+          First carbon neutral certified super fund in the world
+        </li>
+
+        <li>
+          Support only approved, ethical investments
+        </li>
+      </ul>
+
+      <p><%= link_to "Choose Future Super", new_switch_path(partner_id: @future_super.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+      <p><%= link_to "Or find out more about Future Super", partner_path(@future_super), class: "text-s" %></p>
+    </div>
+  </div>
+</div>

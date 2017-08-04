@@ -1,6 +1,13 @@
 class PowerProvidersController < ApplicationController
   def index
-    @state = State.find(params[:state_id]) if params[:state_id]
-    @power_providers = @state.power_providers if @state
+    set_power_criteria(params[:state_id] || nil)
+  end
+  
+  def change_state
+    set_power_criteria(params[:state_id] || nil)
+    
+    respond_to do |format|
+      format.js
+    end
   end
 end

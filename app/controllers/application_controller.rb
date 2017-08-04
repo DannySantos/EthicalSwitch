@@ -14,4 +14,13 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     admin_path
   end
+  
+  def set_power_criteria(state_id)
+    if state_id
+      @state = State.find(state_id)
+      @power_providers = @state.power_providers
+    else
+      @power_providers = PowerProvider.all
+    end
+  end
 end

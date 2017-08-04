@@ -1,0 +1,59 @@
+<style>
+  header.primary {
+    nav {
+      ul {
+        list-style-type: none;
+
+        a {
+          background-repeat: no-repeat;
+          display: inline-block;
+          height: 26px;
+          line-height: 26px;
+          color: #000;
+
+          &.power {
+            background-image: image-url("menu_icon_power");
+          }
+
+          &.super {
+            background-image: image-url("menu_icon_super");
+          }
+
+          &.homeloans {
+            background-image: image-url("menu_icon_homeloans");
+          }
+
+          &:hover {
+            background-position: 0 -26px;
+          }
+
+          span {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+</style>
+
+<nav>
+  <ul class="col-sm-6 col-sm-offset-3">
+    <li class="col-sm-4">
+      <%= link_to ethical_power_switches_path, class: "power" do %>
+        <span>Ethical power</span>
+      <% end %>
+    </li>
+
+    <li class="col-sm-4">
+      <%= link_to ethical_super_switches_path, class: "super" do %>
+        <span>Ethical super</span>
+      <% end %>
+    </li>
+
+    <li class="col-sm-4">
+      <%= link_to ethical_homeloans_switches_path, class: "homeloans" do %>
+        <span>Ethical homeloans</span>
+      <% end %>
+    </li>
+  </ul>
+</nav>

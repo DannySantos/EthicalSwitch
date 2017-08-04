@@ -1,0 +1,112 @@
+<div class="df w100p">
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_powershop_full_transparent.png" %>
+      </div>
+
+      <p class="text-s">Available in <b>VIC, NSW &amp; SE-QLD</b></p>
+
+      <ul class="provider-checklist">
+        <li>
+          100% renewable energy
+        </li>
+
+        <li>
+          Zero carbon emissions
+        </li>
+
+        <li>
+          No lock-in contracts
+        </li>
+
+        <li>
+          Will pay exit fee from your current contract
+          <%= image_tag "help.png", rel: "tooltip", title: 'Up to $75, which covers almost every possible contract <br> <span class="tooltip-tap">Tap to close</span>' %>
+        </li>
+
+        <li>
+          Ranked <b>Australia's greenest provider</b> by Greenpeace two years running
+        </li>
+      </ul>
+
+      <div>
+        <p class="mt0"><%= link_to "Choose Powershop", new_switch_path(partner_id: @powershop.id, charity_id: (@charity && @charity.name != "Healthy Futures") ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Powershop", partner_path(@powershop), class: "text-s" %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_energy_locals_full.png" %>
+      </div>
+
+      <p class="text-s">Available in <b>NSW &amp; QLD</b></p>
+
+      <ul class="provider-checklist">
+        <li>
+          Promise to never raise prices for profit reasons
+        </li>
+
+        <li>
+          Donate over half their profits to charity
+        </li>
+
+        <li>
+          No lock-in contracts
+        </li>
+
+        <li>
+          Fixed prices until July 2018
+        </li>
+
+        <li class="no-tick text-s">
+          Note: If you're wondering why we don't mention renewables it's because Energy Locals do not own generators!
+        </li>
+      </ul>
+
+      <div>
+        <p><%= link_to "Choose Energy Locals", new_switch_path(partner_id: @energy_locals.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Energy Locals", partner_path(@energy_locals), class: "text-s" %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex p10">
+    <div class="grey-padded h100p df fdc">
+      <div class="tac">
+        <%= image_tag "partner_diamond_energy_full.png" %>
+      </div>
+
+      <p class="text-s">Available in <b>VIC, NSW, SA &amp; QLD</b></p>
+
+      <ul class="provider-checklist">
+        <li>
+          Solar specialists
+        </li>
+
+        <li>
+          100% renewable energy
+        </li>
+
+        <li>
+          Zero carbon emissions
+        </li>
+
+        <li>
+          Ranked Australia's second greenest provider by Greenpeace two years running
+        </li>
+      </ul>
+
+      <div>
+        <p><%= link_to "Choose Diamond Energy", new_switch_path(partner_id: @diamond_energy.id, charity_id: @charity ? @charity.id : nil), class: "btn btn-primary btn-padded" %></p>
+
+        <p><%= link_to "Or find out more about Diamond Energy", partner_path(@diamond_energy), class: "text-s" %></p>
+      </div>
+    </div>
+  </div>
+</div>
