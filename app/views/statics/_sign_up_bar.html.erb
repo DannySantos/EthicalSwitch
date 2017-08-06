@@ -1,12 +1,11 @@
 <div class="highlight-bg row white-text pt20 pb20 tac mb40">
-  <h3 class="fwn mb20">Sign Up Now for Updates on New Ethical Products and Services!</h3>
+  <div id="signup_content">
+    <h3 class="fwn mb20">Sign Up Now for Updates on New Ethical Products and Services!</h3>
 
-  <form action="http://ethicalswitch.us9.list-manage1.com/subscribe/post" method="POST">
-    <input type="hidden" name="u" value="c0e17deb72c96e0658699df5e">
-    <input type="hidden" name="id" value="e5960bf2a5">
-    <input type="email" placeholder="Email address" name="MERGE0" id="MERGE0" class="form-control di wi">
-    <input type="text" name="MERGE3" id="MERGE3" placeholder="Postcode" class="form-control di wi">
-
-    <input type="submit" value="Submit" class="btn btn-primary">
-  </form>
+    <%= form_for(Subscriber.new, remote: true) do |f| %>
+      <%= f.email_field :email, placeholder: "Email", class: "form-control di wi" %>
+      <%= f.text_field :postcode, placeholder: "Postcode", class: "form-control di wi" %>
+    <%= f.submit "Submit", class: "btn btn-primary form-control di wi vab mb10" %>
+    <% end %>
+  </div>
 </div>

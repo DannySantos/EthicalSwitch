@@ -1,5 +1,5 @@
 <% if current_user && current_user.admin %>
-  <div class="admin row">
+  <div class="admin row mb40">
     <div class="switches col-sm-10 col-sm-offset-1 mb40">
       <h2 class="mb20">Switchers</h2>
 
@@ -27,6 +27,25 @@
         <%= render @messages %>
       </div>
     </div>
+
+    <div class="subscribers col-sm-10 col-sm-offset-1">
+      <h2 class="mb20">Subscribers</h2>
+
+      <table class="w100p">
+        <thead>
+          <tr class="tal">
+            <th class="col-sm-6">Email</th>
+            <th class="col-sm-6">Postcode</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <%= render @subscribers %>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="clb"></div>
   </div>
 <% else %>
   <div class="tac">You are not authorized to view this page</div>
