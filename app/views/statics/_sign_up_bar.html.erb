@@ -5,7 +5,9 @@
     <%= form_for(Subscriber.new, remote: true) do |f| %>
       <%= f.email_field :email, placeholder: "Email", class: "form-control di wi" %>
       <%= f.text_field :postcode, placeholder: "Postcode", class: "form-control di wi" %>
-    <%= f.submit "Submit", class: "btn btn-primary form-control di wi vab mb10" %>
+      <%= f.submit "Submit", class: "btn btn-primary form-control di wi vab mb10", id: "signup_submit" %>
     <% end %>
+    
+    <div id="subscriber_error" class="text-s" style="display:none"></div>
   </div>
 </div>

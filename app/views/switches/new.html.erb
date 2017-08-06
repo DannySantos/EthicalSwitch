@@ -12,10 +12,17 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 mb50">
+        <div class="col-sm-6 col-sm-offset-3 mb20">
           <p class="tac">Simply fill out this form and then you will be taken to the <%= @partner.name %> website to complete the switch. It should take less than 5 minutes!</p>
-
         </div>
+        
+        <div class="clb"></div>
+        
+        <% if flash[:notice] %>
+          <div class="error-text col-sm-8 col-sm-offset-2 mb20 tac">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
         
         <%= render 'form', partner: @partner %>
       </div>

@@ -1,10 +1,6 @@
 class SwitchesController < ApplicationController
   def new
-    @partner = Partner.find(params[:partner_id])
-    @switch = Switch.new
-    @message = Message.new if @partner.name == "Powershop"
-    @faqs = Faq.all
-    @charities = Charity.current
+    load_new_instance_variables(params[:partner_id])
   end
   
   def create
@@ -13,6 +9,8 @@ class SwitchesController < ApplicationController
     if @switch.save
       redirect_to get_redirect_path(@switch)
     else
+      load_new_instance_variables(@switch.partner_id)
+      flash[:notice] = "Please make sure you have filled out all of your details"
       render :new
     end
   end
@@ -63,5 +61,13 @@ class SwitchesController < ApplicationController
     when "Ethical Homeloans"
       homeloans_sent_switches_path
     end
+  end
+  
+  def load_new_instance_variables(partner_id)
+    @partner = Partner.find(partner_id)
+    @switch = Switch.new
+    @message = Message.new if @partner.name == "Powershop"
+    @faqs = Faq.all
+    @charities = Charity.current
   end
 end

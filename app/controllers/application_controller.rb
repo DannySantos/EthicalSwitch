@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
   
   def set_power_criteria(state_id)
-    if state_id
+    unless state_id.blank?
       @state = State.find(state_id)
       @power_providers = @state.power_providers
     else
