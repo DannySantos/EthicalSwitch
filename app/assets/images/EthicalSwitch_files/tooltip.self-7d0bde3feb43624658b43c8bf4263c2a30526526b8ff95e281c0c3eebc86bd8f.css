@@ -1,0 +1,67 @@
+/* line 1, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+img[rel=tooltip] {
+  cursor: help;
+}
+
+/* line 5, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+#tooltip {
+  text-align: center;
+  color: #fff;
+  background: #111;
+  position: absolute;
+  z-index: 300;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 400px;
+  cursor: help;
+}
+
+/* line 17, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+#tooltip:after {
+  /* triangle decoration */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #111;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -10px;
+}
+
+/* line 31, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+#tooltip.top:after {
+  border-top-color: transparent;
+  border-bottom: 10px solid #111;
+  top: -20px;
+  bottom: auto;
+}
+
+/* line 38, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+#tooltip.left:after {
+  left: 10px;
+  margin: 0;
+}
+
+/* line 43, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+#tooltip.right:after {
+  right: 10px;
+  left: auto;
+  margin: 0;
+}
+
+/* line 49, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+.tooltip-tap {
+  color: #888;
+  font-size: 80%;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 56, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/tooltip.scss */
+  .tooltip-tap {
+    display: block;
+  }
+}

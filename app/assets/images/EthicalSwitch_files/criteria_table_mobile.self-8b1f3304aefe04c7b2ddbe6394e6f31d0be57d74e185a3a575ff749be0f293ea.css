@@ -1,0 +1,158 @@
+/* line 1, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+.mobile-table {
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  font-size: 0.7em;
+}
+/* line 7, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+.mobile-table tr:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+/* line 11, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+.mobile-table td, .mobile-table th {
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+/* line 17, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+.mobile-table td.name {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-left: 0 !important;
+  text-align: center !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+/* line 26, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+.mobile-table td.button {
+  padding-left: 0 !important;
+  text-align: center !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 35, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) {
+  /* line 41, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  /* line 42, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table table, .mobile-table thead, .mobile-table tbody, .mobile-table th, .mobile-table td, .mobile-table tr {
+    display: block;
+  }
+  /* line 47, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 53, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table tr {
+    border: 1px solid #ccc;
+  }
+  /* line 55, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  /* line 62, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+  }
+
+  /* Label the data */
+  /* line 74, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(2):before {
+    content: "Primary Shareholder";
+  }
+
+  /* line 75, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(3):before {
+    content: "Primary Shareholder's Base";
+  }
+
+  /* line 76, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(4):before {
+    content: "Parent Company";
+  }
+
+  /* line 77, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(5):before {
+    content: "Primary Fuel Source";
+  }
+
+  /* line 78, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(6):before {
+    content: "Carbon Emissions";
+  }
+
+  /* line 79, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(7):before {
+    content: "Renewable Energy";
+  }
+
+  /* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(8):before {
+    content: "New Renewable Energy Investment";
+  }
+
+  /* line 81, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(9):before {
+    content: "No CSG Investment";
+  }
+
+  /* line 82, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(10):before {
+    content: "GreenPower Available";
+  }
+
+  /* line 83, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(11):before {
+    content: "Customer Complaints";
+  }
+
+  /* line 84, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(12):before {
+    content: "Dual Fuel";
+  }
+
+  /* line 85, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(13):before {
+    content: "Greenpeace Ranking";
+  }
+
+  /* line 86, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(14):before {
+    content: "States of Operation";
+  }
+
+  /* line 87, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(15):before {
+    content: "Likely Termination Fee";
+  }
+
+  /* line 88, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(16):before {
+    content: "Ethical Switch Rating";
+  }
+
+  /* line 89, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/criteria_table_mobile.css.scss */
+  .mobile-table td:nth-of-type(17):before {
+    content: "";
+  }
+}

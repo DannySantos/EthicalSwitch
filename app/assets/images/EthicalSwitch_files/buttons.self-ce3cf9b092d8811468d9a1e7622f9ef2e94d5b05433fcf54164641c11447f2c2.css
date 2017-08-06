@@ -1,0 +1,21 @@
+/* line 3, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/buttons.css.scss */
+.btn-primary {
+  background-color: #ffd105;
+  border-radius: 0;
+}
+
+/* line 8, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/buttons.css.scss */
+.btn-primary:hover {
+  background-color: #ecc205;
+}
+
+/* line 12, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/buttons.css.scss */
+.btn-padded {
+  padding: 10px 30px;
+}
+
+/* line 16, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/buttons.css.scss */
+.btn-switch-table {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+/* line 3, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/switch_options.css.scss */
+.switch_options .tac img {
+  width: 70%;
+}
+/* line 8, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/switch_options.css.scss */
+.switch_options .provider-checklist {
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  list-style-type: none;
+  flex-grow: 1;
+}
+/* line 15, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/switch_options.css.scss */
+.switch_options .provider-checklist li {
+  background-image: url(/assets/green_tick-a4e4f412107dbb21f1e5af1af436798018beaf616896a042bdadfda19fd64767.png);
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  margin-bottom: 10px;
+}
+/* line 22, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/switch_options.css.scss */
+.switch_options .provider-checklist li:last-child {
+  margin-bottom: 0;
+}
+/* line 26, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/switch_options.css.scss */
+.switch_options .provider-checklist li.no-tick {
+  background-image: none;
+}

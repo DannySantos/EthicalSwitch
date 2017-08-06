@@ -1,0 +1,16 @@
+/* line 1, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/header_footer.css.scss */
+footer.primary {
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+/* line 8, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/header_footer.css.scss */
+footer.primary ul li {
+  display: inline;
+  margin-right: 15px;
+}
+/* line 12, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/header_footer.css.scss */
+footer.primary ul li a {
+  color: #fff;
+}

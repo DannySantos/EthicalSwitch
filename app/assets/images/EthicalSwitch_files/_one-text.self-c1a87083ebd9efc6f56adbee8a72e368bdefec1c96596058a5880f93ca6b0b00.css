@@ -1,0 +1,239 @@
+/* line 1, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fwn {
+  font-weight: normal !important;
+}
+
+/* line 5, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fwb {
+  font-weight: bold;
+}
+
+/* line 9, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-xl {
+  font-size: 3em !important;
+}
+
+/* line 13, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-l {
+  font-size: 1.5em !important;
+}
+
+/* line 17, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-s {
+  font-size: 0.8em !important;
+}
+
+/* line 21, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-xs {
+  font-size: 0.5em !important;
+}
+
+/* line 25, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-black {
+  color: #000 !important;
+}
+
+/* line 29, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.text-white {
+  color: #fff !important;
+}
+
+/* line 33, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.tal {
+  text-align: left !important;
+}
+
+/* line 37, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.tar {
+  text-align: right !important;
+}
+
+/* line 41, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.tac {
+  text-align: center !important;
+}
+
+/* line 45, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.tdn {
+  text-decoration: none !important;
+}
+
+/* line 49, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.ttn {
+  text-transform: none;
+}
+
+/* line 53, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.ttc {
+  text-transform: capitalize;
+}
+
+/* line 57, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.ttu {
+  text-transform: uppercase;
+}
+
+/* line 61, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.ttl {
+  text-transform: lowercase;
+}
+
+/* line 65, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.whsnw {
+  white-space: nowrap;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz1 {
+  font-size: 1px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz2 {
+  font-size: 2px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz3 {
+  font-size: 3px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz4 {
+  font-size: 4px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz5 {
+  font-size: 5px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz6 {
+  font-size: 6px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz7 {
+  font-size: 7px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz8 {
+  font-size: 8px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz9 {
+  font-size: 9px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz10 {
+  font-size: 10px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz11 {
+  font-size: 11px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz12 {
+  font-size: 12px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz13 {
+  font-size: 13px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz14 {
+  font-size: 14px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz15 {
+  font-size: 15px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz16 {
+  font-size: 16px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz17 {
+  font-size: 17px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz18 {
+  font-size: 18px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz19 {
+  font-size: 19px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz20 {
+  font-size: 20px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz21 {
+  font-size: 21px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz22 {
+  font-size: 22px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz23 {
+  font-size: 23px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz24 {
+  font-size: 24px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz25 {
+  font-size: 25px !important;
+}
+
+/* line 72, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz30 {
+  font-size: 30px !important;
+}
+
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz1 {
+  font-size: 1em !important;
+}
+
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz2 {
+  font-size: 2em !important;
+}
+
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz3 {
+  font-size: 3em !important;
+}
+
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz4 {
+  font-size: 4em !important;
+}
+
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/_one-text.scss */
+.fz5 {
+  font-size: 5em !important;
+}

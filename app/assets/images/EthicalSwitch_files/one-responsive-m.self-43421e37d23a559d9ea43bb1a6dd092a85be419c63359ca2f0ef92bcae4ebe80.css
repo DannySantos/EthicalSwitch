@@ -1,0 +1,1781 @@
+@media only screen and (min-width: 768px) {
+  /* line 2, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .poa-m {
+    position: absolute !important;
+  }
+
+  /* line 6, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .por-m {
+    position: relative !important;
+  }
+
+  /* line 10, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pof-m {
+    position: fixed !important;
+  }
+
+  /* line 14, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .fl-m {
+    float: left;
+  }
+
+  /* line 18, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .fln-m {
+    float: none;
+  }
+
+  /* line 22, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .fll-m {
+    float: left;
+  }
+
+  /* line 26, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .flr-m {
+    float: right;
+  }
+
+  /* line 30, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .cll-m {
+    clear: left;
+  }
+
+  /* line 34, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .clr-m {
+    clear: right;
+  }
+
+  /* line 38, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .clb-m {
+    clear: both;
+  }
+
+  /* line 42, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .vh-m {
+    visibility: hidden;
+  }
+
+  /* line 46, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ovv-m {
+    overflow: visible;
+  }
+
+  /* line 50, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ovh-m {
+    overflow: hidden;
+  }
+
+  /* line 54, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ovs-m {
+    overflow: scroll;
+  }
+
+  /* line 58, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .bxz-m {
+    box-sizing: border-box;
+  }
+
+  /* line 62, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .vat-m {
+    vertical-align: top;
+  }
+
+  /* line 66, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .vab-m {
+    vertical-align: bottom;
+  }
+
+  /* line 70, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .vam-m {
+    vertical-align: middle;
+  }
+
+  /* line 74, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .bgszcv-m {
+    background-size: cover;
+  }
+
+  /* line 78, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .t0-m {
+    top: 0 !important;
+  }
+
+  /* line 82, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .b0-m {
+    bottom: 0 !important;
+  }
+
+  /* line 86, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .l0-m {
+    left: 0 !important;
+  }
+
+  /* line 90, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .r0-m {
+    right: 0 !important;
+  }
+
+  /* line 94, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .di-m {
+    display: inline !important;
+  }
+
+  /* line 98, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .db-m {
+    display: block !important;
+  }
+
+  /* line 102, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .dib-m {
+    display: inline-block !important;
+  }
+
+  /* line 106, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .dn-m {
+    display: none !important;
+  }
+
+  /* line 110, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .dt-m {
+    display: table;
+  }
+
+  /* line 114, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .dtbc-m {
+    display: table-cell;
+  }
+
+  /* line 118, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m-a-m {
+    margin: auto !important;
+  }
+
+  /* line 122, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .h100p-m {
+    height: 100% !important;
+  }
+
+  /* line 126, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w100p-m {
+    width: 100% !important;
+  }
+
+  /* line 130, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .hi-m {
+    height: initial !important;
+  }
+
+  /* line 134, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .wi-m {
+    width: initial !important;
+  }
+
+  /* line 138, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .tal-m {
+    text-align: left !important;
+  }
+
+  /* line 142, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .tar-m {
+    text-align: right !important;
+  }
+
+  /* line 146, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .tac-m {
+    text-align: center !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w0-m {
+    width: 0px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w1-m {
+    width: 1px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w2-m {
+    width: 2px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w3-m {
+    width: 3px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w4-m {
+    width: 4px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w5-m {
+    width: 5px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w6-m {
+    width: 6px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w7-m {
+    width: 7px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w8-m {
+    width: 8px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w9-m {
+    width: 9px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w10-m {
+    width: 10px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w11-m {
+    width: 11px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w12-m {
+    width: 12px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w13-m {
+    width: 13px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w14-m {
+    width: 14px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w15-m {
+    width: 15px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w20-m {
+    width: 20px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w25-m {
+    width: 25px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w30-m {
+    width: 30px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w35-m {
+    width: 35px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w40-m {
+    width: 40px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w45-m {
+    width: 45px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w50-m {
+    width: 50px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w75-m {
+    width: 75px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w100-m {
+    width: 100px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w150-m {
+    width: 150px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w200-m {
+    width: 200px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w250-m {
+    width: 250px !important;
+  }
+
+  /* line 153, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .w300-m {
+    width: 300px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m0-m {
+    margin: 0px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m1-m {
+    margin: 1px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m2-m {
+    margin: 2px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m3-m {
+    margin: 3px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m4-m {
+    margin: 4px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m5-m {
+    margin: 5px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m6-m {
+    margin: 6px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m7-m {
+    margin: 7px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m8-m {
+    margin: 8px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m9-m {
+    margin: 9px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m10-m {
+    margin: 10px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m11-m {
+    margin: 11px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m12-m {
+    margin: 12px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m13-m {
+    margin: 13px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m14-m {
+    margin: 14px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m15-m {
+    margin: 15px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m20-m {
+    margin: 20px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m25-m {
+    margin: 25px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m30-m {
+    margin: 30px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m35-m {
+    margin: 35px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m40-m {
+    margin: 40px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m45-m {
+    margin: 45px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m50-m {
+    margin: 50px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m75-m {
+    margin: 75px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m100-m {
+    margin: 100px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m150-m {
+    margin: 150px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m200-m {
+    margin: 200px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m250-m {
+    margin: 250px !important;
+  }
+
+  /* line 159, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .m300-m {
+    margin: 300px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt0-m {
+    margin-top: 0px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt1-m {
+    margin-top: 1px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt2-m {
+    margin-top: 2px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt3-m {
+    margin-top: 3px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt4-m {
+    margin-top: 4px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt5-m {
+    margin-top: 5px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt6-m {
+    margin-top: 6px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt7-m {
+    margin-top: 7px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt8-m {
+    margin-top: 8px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt9-m {
+    margin-top: 9px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt10-m {
+    margin-top: 10px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt11-m {
+    margin-top: 11px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt12-m {
+    margin-top: 12px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt13-m {
+    margin-top: 13px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt14-m {
+    margin-top: 14px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt15-m {
+    margin-top: 15px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt20-m {
+    margin-top: 20px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt25-m {
+    margin-top: 25px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt30-m {
+    margin-top: 30px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt35-m {
+    margin-top: 35px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt40-m {
+    margin-top: 40px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt45-m {
+    margin-top: 45px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt50-m {
+    margin-top: 50px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt75-m {
+    margin-top: 75px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt100-m {
+    margin-top: 100px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt150-m {
+    margin-top: 150px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt200-m {
+    margin-top: 200px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt250-m {
+    margin-top: 250px !important;
+  }
+
+  /* line 165, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mt300-m {
+    margin-top: 300px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr0-m {
+    margin-right: 0px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr1-m {
+    margin-right: 1px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr2-m {
+    margin-right: 2px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr3-m {
+    margin-right: 3px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr4-m {
+    margin-right: 4px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr5-m {
+    margin-right: 5px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr6-m {
+    margin-right: 6px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr7-m {
+    margin-right: 7px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr8-m {
+    margin-right: 8px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr9-m {
+    margin-right: 9px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr10-m {
+    margin-right: 10px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr11-m {
+    margin-right: 11px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr12-m {
+    margin-right: 12px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr13-m {
+    margin-right: 13px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr14-m {
+    margin-right: 14px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr15-m {
+    margin-right: 15px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr20-m {
+    margin-right: 20px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr25-m {
+    margin-right: 25px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr30-m {
+    margin-right: 30px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr35-m {
+    margin-right: 35px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr40-m {
+    margin-right: 40px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr45-m {
+    margin-right: 45px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr50-m {
+    margin-right: 50px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr75-m {
+    margin-right: 75px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr100-m {
+    margin-right: 100px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr150-m {
+    margin-right: 150px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr200-m {
+    margin-right: 200px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr250-m {
+    margin-right: 250px !important;
+  }
+
+  /* line 171, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mr300-m {
+    margin-right: 300px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb0-m {
+    margin-bottom: 0px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb1-m {
+    margin-bottom: 1px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb2-m {
+    margin-bottom: 2px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb3-m {
+    margin-bottom: 3px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb4-m {
+    margin-bottom: 4px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb5-m {
+    margin-bottom: 5px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb6-m {
+    margin-bottom: 6px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb7-m {
+    margin-bottom: 7px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb8-m {
+    margin-bottom: 8px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb9-m {
+    margin-bottom: 9px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb10-m {
+    margin-bottom: 10px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb11-m {
+    margin-bottom: 11px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb12-m {
+    margin-bottom: 12px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb13-m {
+    margin-bottom: 13px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb14-m {
+    margin-bottom: 14px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb15-m {
+    margin-bottom: 15px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb20-m {
+    margin-bottom: 20px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb25-m {
+    margin-bottom: 25px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb30-m {
+    margin-bottom: 30px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb35-m {
+    margin-bottom: 35px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb40-m {
+    margin-bottom: 40px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb45-m {
+    margin-bottom: 45px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb50-m {
+    margin-bottom: 50px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb75-m {
+    margin-bottom: 75px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb100-m {
+    margin-bottom: 100px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb150-m {
+    margin-bottom: 150px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb200-m {
+    margin-bottom: 200px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb250-m {
+    margin-bottom: 250px !important;
+  }
+
+  /* line 177, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .mb300-m {
+    margin-bottom: 300px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml0-m {
+    margin-left: 0px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml1-m {
+    margin-left: 1px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml2-m {
+    margin-left: 2px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml3-m {
+    margin-left: 3px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml4-m {
+    margin-left: 4px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml5-m {
+    margin-left: 5px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml6-m {
+    margin-left: 6px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml7-m {
+    margin-left: 7px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml8-m {
+    margin-left: 8px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml9-m {
+    margin-left: 9px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml10-m {
+    margin-left: 10px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml11-m {
+    margin-left: 11px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml12-m {
+    margin-left: 12px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml13-m {
+    margin-left: 13px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml14-m {
+    margin-left: 14px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml15-m {
+    margin-left: 15px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml20-m {
+    margin-left: 20px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml25-m {
+    margin-left: 25px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml30-m {
+    margin-left: 30px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml35-m {
+    margin-left: 35px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml40-m {
+    margin-left: 40px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml45-m {
+    margin-left: 45px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml50-m {
+    margin-left: 50px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml75-m {
+    margin-left: 75px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml100-m {
+    margin-left: 100px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml150-m {
+    margin-left: 150px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml200-m {
+    margin-left: 200px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml250-m {
+    margin-left: 250px !important;
+  }
+
+  /* line 183, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .ml300-m {
+    margin-left: 300px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p0-m {
+    padding: 0px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p1-m {
+    padding: 1px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p2-m {
+    padding: 2px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p3-m {
+    padding: 3px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p4-m {
+    padding: 4px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p5-m {
+    padding: 5px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p6-m {
+    padding: 6px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p7-m {
+    padding: 7px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p8-m {
+    padding: 8px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p9-m {
+    padding: 9px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p10-m {
+    padding: 10px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p11-m {
+    padding: 11px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p12-m {
+    padding: 12px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p13-m {
+    padding: 13px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p14-m {
+    padding: 14px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p15-m {
+    padding: 15px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p20-m {
+    padding: 20px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p25-m {
+    padding: 25px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p30-m {
+    padding: 30px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p35-m {
+    padding: 35px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p40-m {
+    padding: 40px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p45-m {
+    padding: 45px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p50-m {
+    padding: 50px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p75-m {
+    padding: 75px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p100-m {
+    padding: 100px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p150-m {
+    padding: 150px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p200-m {
+    padding: 200px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p250-m {
+    padding: 250px !important;
+  }
+
+  /* line 189, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .p300-m {
+    padding: 300px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt0-m {
+    padding-top: 0px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt1-m {
+    padding-top: 1px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt2-m {
+    padding-top: 2px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt3-m {
+    padding-top: 3px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt4-m {
+    padding-top: 4px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt5-m {
+    padding-top: 5px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt6-m {
+    padding-top: 6px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt7-m {
+    padding-top: 7px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt8-m {
+    padding-top: 8px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt9-m {
+    padding-top: 9px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt10-m {
+    padding-top: 10px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt11-m {
+    padding-top: 11px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt12-m {
+    padding-top: 12px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt13-m {
+    padding-top: 13px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt14-m {
+    padding-top: 14px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt15-m {
+    padding-top: 15px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt20-m {
+    padding-top: 20px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt25-m {
+    padding-top: 25px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt30-m {
+    padding-top: 30px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt35-m {
+    padding-top: 35px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt40-m {
+    padding-top: 40px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt45-m {
+    padding-top: 45px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt50-m {
+    padding-top: 50px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt75-m {
+    padding-top: 75px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt100-m {
+    padding-top: 100px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt150-m {
+    padding-top: 150px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt200-m {
+    padding-top: 200px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt250-m {
+    padding-top: 250px !important;
+  }
+
+  /* line 195, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pt300-m {
+    padding-top: 300px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr0-m {
+    padding-right: 0px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr1-m {
+    padding-right: 1px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr2-m {
+    padding-right: 2px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr3-m {
+    padding-right: 3px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr4-m {
+    padding-right: 4px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr5-m {
+    padding-right: 5px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr6-m {
+    padding-right: 6px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr7-m {
+    padding-right: 7px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr8-m {
+    padding-right: 8px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr9-m {
+    padding-right: 9px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr10-m {
+    padding-right: 10px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr11-m {
+    padding-right: 11px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr12-m {
+    padding-right: 12px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr13-m {
+    padding-right: 13px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr14-m {
+    padding-right: 14px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr15-m {
+    padding-right: 15px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr20-m {
+    padding-right: 20px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr25-m {
+    padding-right: 25px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr30-m {
+    padding-right: 30px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr35-m {
+    padding-right: 35px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr40-m {
+    padding-right: 40px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr45-m {
+    padding-right: 45px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr50-m {
+    padding-right: 50px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr75-m {
+    padding-right: 75px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr100-m {
+    padding-right: 100px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr150-m {
+    padding-right: 150px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr200-m {
+    padding-right: 200px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr250-m {
+    padding-right: 250px !important;
+  }
+
+  /* line 201, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pr300-m {
+    padding-right: 300px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb0-m {
+    padding-bottom: 0px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb1-m {
+    padding-bottom: 1px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb2-m {
+    padding-bottom: 2px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb3-m {
+    padding-bottom: 3px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb4-m {
+    padding-bottom: 4px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb5-m {
+    padding-bottom: 5px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb6-m {
+    padding-bottom: 6px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb7-m {
+    padding-bottom: 7px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb8-m {
+    padding-bottom: 8px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb9-m {
+    padding-bottom: 9px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb10-m {
+    padding-bottom: 10px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb11-m {
+    padding-bottom: 11px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb12-m {
+    padding-bottom: 12px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb13-m {
+    padding-bottom: 13px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb14-m {
+    padding-bottom: 14px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb15-m {
+    padding-bottom: 15px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb20-m {
+    padding-bottom: 20px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb25-m {
+    padding-bottom: 25px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb30-m {
+    padding-bottom: 30px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb35-m {
+    padding-bottom: 35px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb40-m {
+    padding-bottom: 40px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb45-m {
+    padding-bottom: 45px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb50-m {
+    padding-bottom: 50px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb75-m {
+    padding-bottom: 75px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb100-m {
+    padding-bottom: 100px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb150-m {
+    padding-bottom: 150px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb200-m {
+    padding-bottom: 200px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb250-m {
+    padding-bottom: 250px !important;
+  }
+
+  /* line 207, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pb300-m {
+    padding-bottom: 300px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl0-m {
+    padding-left: 0px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl1-m {
+    padding-left: 1px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl2-m {
+    padding-left: 2px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl3-m {
+    padding-left: 3px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl4-m {
+    padding-left: 4px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl5-m {
+    padding-left: 5px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl6-m {
+    padding-left: 6px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl7-m {
+    padding-left: 7px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl8-m {
+    padding-left: 8px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl9-m {
+    padding-left: 9px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl10-m {
+    padding-left: 10px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl11-m {
+    padding-left: 11px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl12-m {
+    padding-left: 12px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl13-m {
+    padding-left: 13px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl14-m {
+    padding-left: 14px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl15-m {
+    padding-left: 15px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl20-m {
+    padding-left: 20px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl25-m {
+    padding-left: 25px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl30-m {
+    padding-left: 30px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl35-m {
+    padding-left: 35px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl40-m {
+    padding-left: 40px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl45-m {
+    padding-left: 45px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl50-m {
+    padding-left: 50px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl75-m {
+    padding-left: 75px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl100-m {
+    padding-left: 100px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl150-m {
+    padding-left: 150px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl200-m {
+    padding-left: 200px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl250-m {
+    padding-left: 250px !important;
+  }
+
+  /* line 213, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-responsive-m.scss */
+  .pl300-m {
+    padding-left: 300px !important;
+  }
+}

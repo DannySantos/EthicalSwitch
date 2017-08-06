@@ -1,0 +1,137 @@
+/* line 2, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .chosen-provider {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  line-height: 50px;
+}
+/* line 14, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner main {
+  border: 1px solid #d3d3d3;
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 19, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner main hr {
+  width: 90%;
+  margin-left: 5%;
+  background-color: #ccc;
+  height: 1px;
+  border: 0;
+  margin-bottom: 40px;
+}
+/* line 30, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .reasons img {
+  width: 70%;
+}
+/* line 36, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .good-super-icons img {
+  width: 87px;
+}
+/* line 41, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-list {
+  margin: 0;
+  padding: 20px 16px 16px 40px;
+  list-style-type: none;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+/* line 48, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-list li {
+  background: url(/assets/aus_eth_black_tick-a53713ca335f464d322503df15eee0aba1c359671a4fff4dcd5c66a2420bb003.png) no-repeat left 2px;
+  padding-left: 33px;
+  margin-bottom: 10px;
+}
+/* line 53, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-list li .disclaimer {
+  font-size: 0.6em;
+}
+/* line 56, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-list li .disclaimer a {
+  text-decoration: underline;
+}
+/* line 64, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-icons img {
+  max-width: 44%;
+}
+/* line 68, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-icons p.icon-text {
+  width: 50%;
+  text-align: left;
+}
+/* line 75, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-icons-2 img {
+  max-width: 50%;
+}
+/* line 80, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-testimonial {
+  background-color: #f6f6f6;
+  padding: 20px 60px;
+}
+/* line 84, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-testimonial .australian-ethical-photo {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(/assets/aus_eth_tim_silverwood-cba1bd080a2875f93d9f9922bd1deda88646402308eed157332131856f33995e.jpg);
+  border-radius: 50%;
+  float: left;
+}
+/* line 93, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-testimonial blockquote {
+  width: calc(100% - 230px);
+  padding-top: 30px;
+  font-weight: bold;
+  line-height: 24px;
+}
+/* line 99, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .aus-eth-testimonial blockquote footer {
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+/* line 106, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-approved, .partner .future-super-excluded {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+/* line 113, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-approved .tick-cross, .partner .future-super-excluded .tick-cross {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  left: 0;
+  text-align: center;
+}
+/* line 122, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-approved {
+  background-color: #EACD80;
+}
+/* line 126, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-excluded {
+  background-color: #333;
+  color: #fff;
+}
+/* line 131, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-icons div {
+  margin-bottom: 30px;
+}
+/* line 135, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-carbon-neutral {
+  padding: 20px;
+  background-color: #eaeaea;
+  border: 2px dashed #abcdef;
+  width: 90%;
+  margin-left: 5%;
+}
+/* line 142, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/partners.css.scss */
+.partner .future-super-carbon-neutral div:nth-child(2) {
+  font-size: 1.4em;
+}

@@ -1,0 +1,59 @@
+/* line 3, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner {
+  height: 300px;
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+}
+/* line 9, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner h1 {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* line 15, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .faded-black h1 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: normal;
+}
+/* line 23, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .faded-black h2 {
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: normal;
+}
+/* line 30, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner p {
+  font-size: 1.2em;
+}
+/* line 34, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .btn-switch-icon {
+  background-color: #ffd105;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px #999;
+  box-shadow: 0px 2px #999;
+}
+/* line 43, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .btn-switch-icon img {
+  width: 45px;
+}
+/* line 47, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .btn-switch-icon p {
+  margin-bottom: 0;
+}
+/* line 51, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner .btn-switch-icon:hover {
+  background-color: #ecc205;
+}
+
+/* line 57, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/banner.scss */
+.banner-tall {
+  height: 427px;
+}

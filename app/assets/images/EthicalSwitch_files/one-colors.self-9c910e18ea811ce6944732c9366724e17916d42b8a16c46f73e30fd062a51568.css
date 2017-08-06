@@ -1,0 +1,49 @@
+/* line 3, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+body {
+  color: #333;
+}
+
+/* line 7, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+a {
+  color: #000;
+}
+
+/* line 11, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.primary-text {
+  color: #ffd105 !important;
+}
+
+/* line 15, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.highlight-text {
+  color: #3084bf !important;
+}
+
+/* line 19, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.white-text {
+  color: #fff !important;
+}
+
+/* line 23, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.black-text {
+  color: #000 !important;
+}
+
+/* line 27, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.primary-bg {
+  background-color: #ffd105 !important;
+}
+
+/* line 31, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.highlight-bg {
+  background-color: #3084bf !important;
+}
+
+/* line 35, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.white-bg {
+  background-color: #fff !important;
+}
+
+/* line 39, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-colors.scss */
+.black-bg {
+  background-color: #000 !important;
+}
