@@ -1,0 +1,90 @@
+.mobile-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  word-wrap: break-word;
+  font-size: 0.7em;
+  
+  tr:nth-of-type(odd) { 
+    background: #f7f7f7; 
+  }
+  
+  td, th { 
+    padding: 6px; 
+    border-bottom: 1px solid #ccc; 
+    text-align: left; 
+  }
+
+  td.name {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 0 !important;
+    text-align: center !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  td.button {
+    padding-left: 0 !important;
+    text-align: center !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 769px){
+	.mobile-table {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.mobile-table {
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      padding-left: 50%; 
+    }
+
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+    }
+  }
+	
+	/* Label the data */
+	.mobile-table td:nth-of-type(2):before  { content: "Primary Shareholder"; }
+	.mobile-table td:nth-of-type(3):before  { content: "Primary Shareholder's Base"; }
+	.mobile-table td:nth-of-type(4):before  { content: "Parent Company"; }
+	.mobile-table td:nth-of-type(5):before  { content: "Primary Fuel Source"; }
+	.mobile-table td:nth-of-type(6):before  { content: "Carbon Emissions"; }
+	.mobile-table td:nth-of-type(7):before  { content: "Renewable Energy"; }
+	.mobile-table td:nth-of-type(8):before  { content: "New Renewable Energy Investment"; }
+	.mobile-table td:nth-of-type(9):before  { content: "No CSG Investment"; }
+	.mobile-table td:nth-of-type(10):before { content: "GreenPower Available"; }
+	.mobile-table td:nth-of-type(11):before { content: "Customer Complaints"; }
+	.mobile-table td:nth-of-type(12):before { content: "Dual Fuel"; }
+	.mobile-table td:nth-of-type(13):before { content: "Greenpeace Ranking"; }
+	.mobile-table td:nth-of-type(14):before { content: "States of Operation"; }
+	.mobile-table td:nth-of-type(15):before { content: "Likely Termination Fee"; }
+	.mobile-table td:nth-of-type(16):before { content: "Ethical Switch Rating"; }
+	.mobile-table td:nth-of-type(17):before { content: ""; }
+}

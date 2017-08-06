@@ -1,0 +1,50 @@
+<div class="criteria_table_container_mobile">
+  <table class="mobile-table">
+    <tbody>
+      <% @power_providers.each do |power_provider| %>
+        <tr>
+          <td class="name"><%= power_provider.name %></td>
+          <td><%= power_provider.major_shareholder %></td>
+          <td><%= power_provider.major_shareholder_base %></td>
+          <td><%= power_provider.parent_company %></td>
+          <td><%= power_provider.primary_fuel_source %></td>
+          <td><%= power_provider.carbon_emissions %></td>
+          <td><%= power_provider.renewable_energy %></td>
+          <td><%= power_provider.new_renewable_energy_investment %></td>
+          <td><%= power_provider.no_csg_investment %></td>
+          <td><%= power_provider.greenpower_available %></td>
+          <td><%= power_provider.ombudsman_complaints %></td>
+          <td><%= power_provider.dual_fuel %></td>
+          <td><%= power_provider.greenpeace_ranking %></td>
+          
+          <td>
+            <% power_provider.states.each do |state| %>
+              <%= "#{state.short_name} " %>
+            <% end %>
+          </td>
+          
+          <% if @state %>
+            <td><%= power_provider.termination_fees.find_by(state_id: @state.id).amount %></td>
+          <% end %>
+          
+          <td>
+            <% power_provider.ethical_switch_rating.to_i.times do %>
+              <%= image_tag "gold_star.png" %>
+            <% end %>
+
+            <% (5 - power_provider.ethical_switch_rating).to_i.times do %>
+              <%= image_tag "grey_star.png" %>
+            <% end %>
+          </td>
+          
+          <% if power_provider.partner? %>
+            <td class="button">
+              <%= link_to "Switch Now", new_switch_path(partner_id: Partner.find_by(name: power_provider.name).id, charity_id: nil), class: "btn btn-primary btn-switch-table" %>
+            </td>
+            
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
