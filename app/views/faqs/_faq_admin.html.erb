@@ -1,0 +1,27 @@
+<div class="faq_admin_<%= faq.id %>">
+  <p class="fwb"><%= faq.title %> <span class="flr"><%= link_to "edit", edit_faq_path(faq), class: "fake-link" %> | <%= link_to "delete", faq_path(faq), method: :delete, class: "fake-link" %></span></p>
+  <p><%= faq.answer.html_safe %></p>
+
+  <div class="mb40">
+    <span class="db fwb mb10">Show on:</span>
+
+    <% @tags.each do |tag| %>
+      <% if faq.tags.include?(tag) %>
+        <%= form_for(FaqTag.find_by(faq_id: faq.id, tag_id: tag.id), method: :delete, remote: true, html: {class: "di"}) do |f| %>
+          <%= hidden_field_tag :faq_id, faq.id %>
+          <%= f.submit tag.name, class: "btn btn-grey mb5 btn-grey-selected" %>
+        <% end %>
+      <% else %>
+        <%= form_for(FaqTag.new, remote: true, html: {class: "di"}) do |f| %>
+          <%= f.hidden_field :faq_id, value: faq.id %>
+          <%= f.hidden_field :tag_id, value: tag.id %>
+          <%= f.submit tag.name, class: "btn btn-grey mb5" %>
+        <% end %>
+      <% end %>
+    <% end %>
+    
+    <div class="clb"></div>
+  </div>
+
+  <hr class="mb40">
+</div>

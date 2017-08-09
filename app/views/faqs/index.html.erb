@@ -1,36 +1,24 @@
 <div class="text-page">
   <header class="row flex-center">
-    <h1>FAQs</h1>
+    <h1 class="tac">FAQs</h1>
   </header>
 
   <main class="faqs col-sm-8 col-sm-offset-2">
-		<ul>
-      <% @faq_categories.each do |faq_category| %>
+    <ul>
+      <% @faqs.each do |faq| %>
         <li>
-          <%= link_to faq_category.name, "##{faq_category.name.downcase.gsub(" ", "_").gsub("?", "")}" %>
+          <%= link_to faq.title, "##{faq.title.downcase.gsub(" ", "_").gsub("?", "")}" %>
         </li>
-			
-				<ul>
-				  <% faq_category.faqs.each do |faq| %>
-            <li>
-              <%= link_to faq.title, "##{faq.title.downcase.gsub(" ", "_").gsub("?", "")}" %>
-            </li>
-				  <% end %>
-        </ul>
       <% end %>
     </ul>
 		
-    <% @faq_categories.each do |faq_category| %>
+    <% @faqs.each do |faq| %>
       <div class="faq">
-        <h3 id="<%= "#{faq_category.name.downcase.gsub(" ", "_").gsub("?", "")}" %>"><%= faq_category.name %></h3>
-
-        <% faq_category.faqs.each do |faq| %>
         <h4 id="<%= "#{faq.title.downcase.gsub(" ", "_").gsub("?", "")}" %>"><%= faq.title %></h4>
 
-          <%= faq.answer.html_safe %>
+        <%= faq.answer.html_safe %>
 
-          <a href="#" class="faqs-top">^ Back to the top</a>
-        <% end %>
+        <a href="#" class="faqs-top">^ Back to the top</a>
       </div>
     <% end %>
   </main>

@@ -1,0 +1,15 @@
+<% if current_user && current_user.admin %>
+  <div class="row text-page-header mb40 text-s">
+    <div class="col-sm-8 col-sm-offset-2">
+      <%= link_to "Dashboard", admin_path %> > <%= link_to "FAQs", admin_faqs_path %> > Edit FAQ
+    </div>
+    
+    <div class="clb"></div>
+  </div>
+  
+  <div class="col-sm-8 col-sm-offset-2 mb40">
+    <%= render 'faqs/form' %>
+  </div>
+<% else %>
+  <div class="tac">You are not authorized to view this page</div>
+<% end %>

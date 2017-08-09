@@ -1,0 +1,8 @@
+<%= form_for(@faq) do |f| %>
+  <%= f.text_field :title, placeholder: "Question", class: "form-control" %>
+  <%= f.text_area :answer, placeholder: "Answer", class: "form-control" %>
+
+  <div class="tac">
+    <%= f.submit nil, class: "btn btn-primary" %>
+  </div>
+<% end %>

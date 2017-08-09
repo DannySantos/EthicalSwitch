@@ -7,10 +7,16 @@ Rails.application.routes.draw do
   get '/privacy_policy', to: 'statics#privacy_policy'
   get '/criteria_table_info', to: 'statics#criteria_table_info'
   get '/admin', to: 'admin#admin'
+  get '/admin/messages', to: 'admin#messages'
+  get '/admin/switchers', to: 'admin#switchers'
+  get '/admin/subscribers', to: 'admin#subscribers'
+  get '/admin/faqs', to: 'admin#faqs'
+  get '/admin/new_faq', to: 'admin#new_faq'
   post '/home_switch', to: 'statics#home_switch'
   post '/change_state', to: 'power_providers#change_state'
   
-  resources :faqs, only: [:index]
+  resources :faqs, only: [:index, :new, :create, :edit, :update, :destroy]
+  resources :faq_tags, only: [:create, :destroy]
   resources :messages, only: [:new, :create]
   resources :partners, only: [:new, :show]
   resources :charities, only: [:show]
@@ -44,5 +50,3 @@ Rails.application.routes.draw do
   get "ethicalhomeloans", to: redirect("/switches/ethical_homeloans")
   get "ethical-homeloans", to: redirect("/switches/ethical_homeloans")
 end
-
-

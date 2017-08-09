@@ -1,48 +1,47 @@
 <% if current_user && current_user.admin %>
-  <div class="admin row mb40">
-    <div class="switches col-sm-10 col-sm-offset-1 mb40">
-      <h2 class="mb20">Switchers</h2>
-
-      <table class="w100p">
-        <thead>
-          <tr class="tal">
-            <th class="col-sm-2">Name</th>
-            <th class="col-sm-3">Email</th>
-            <th class="col-sm-2">Postcode/Phone</th>
-            <th class="col-sm-3">Charity Choice</th>
-            <th class="col-sm-2">Partner Choice</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <%= render @switches %>
-        </tbody>
-      </table>
+  <div class="row text-page-header mb40 text-s">
+    <div class="col-sm-8 col-sm-offset-2">
+      <%= link_to "Dashboard", admin_path %>
     </div>
-
-    <div class="messages col-sm-10 col-sm-offset-1">
-      <h2 class="mb20">Messages</h2>
-
-      <div class="row">
-        <%= render @messages %>
+    
+    <div class="clb"></div>
+  </div>
+  
+  <div class="admin row mb40 tac">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="col-sm-6 p10">
+        <%= link_to admin_switchers_path do %>
+          <div class="admin-button">
+            Switchers
+          </div>
+        <% end %>
       </div>
-    </div>
 
-    <div class="subscribers col-sm-10 col-sm-offset-1">
-      <h2 class="mb20">Subscribers</h2>
+      <div class="col-sm-6 p10">
+        <%= link_to admin_messages_path do %>
+          <div class="admin-button">
+            Messages
+          </div>
+        <% end %>
+      </div>
 
-      <table class="w100p">
-        <thead>
-          <tr class="tal">
-            <th class="col-sm-6">Email</th>
-            <th class="col-sm-6">Postcode</th>
-          </tr>
-        </thead>
+      <div class="col-sm-6 p10">
+        <%= link_to admin_subscribers_path do %>
+          <div class="admin-button">
+            Subscribers
+          </div>
+        <% end %>
+      </div>
 
-        <tbody>
-          <%= render @subscribers %>
-        </tbody>
-      </table>
+      <div class="col-sm-6 p10">
+        <%= link_to admin_faqs_path do %>
+          <div class="admin-button">
+            FAQs
+          </div>
+        <% end %>
+      </div>
+      
+      <div class="clb"></div>
     </div>
     
     <div class="clb"></div>

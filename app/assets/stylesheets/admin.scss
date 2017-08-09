@@ -18,4 +18,15 @@
       }
     }
   }
+  
+  .admin-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .admin-button:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+  }
 }

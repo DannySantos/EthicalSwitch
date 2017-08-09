@@ -1,6 +1,4 @@
 class Faq < ApplicationRecord
-  belongs_to :faq_category
-  
-  def index
-  end
+  has_many :faq_tags
+  has_many :tags, through: :faq_tags
 end

@@ -1,0 +1,19 @@
+<% if current_user && current_user.admin %>  
+  <div class="row text-page-header mb40 text-s">
+    <div class="col-sm-8 col-sm-offset-2">
+      <%= link_to "Dashboard", admin_path %> > FAQs
+    </div>
+    
+    <div class="clb"></div>
+  </div>
+  
+  <div class="faqs admin col-sm-8 col-sm-offset-2">
+    <h2 class="mb20">FAQs <%= link_to "Add New", admin_new_faq_path, class: "btn btn-primary flr" %></h2>
+
+    <% @faqs.each do |faq| %>
+      <%= render "faqs/faq_admin", faq: faq %>
+    <% end %>
+  </div>
+<% else %>
+  <div class="tac">You are not authorized to view this page</div>
+<% end %>

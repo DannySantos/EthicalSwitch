@@ -9,6 +9,20 @@
   background-color: $primary_color_highlight;
 }
 
+.btn-grey {
+  background-color: #eaeaea;
+}
+
+.btn-grey-selected {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-grey:hover {
+  background-color: green;
+  color: #fff;
+}
+
 .btn-padded {
   padding: 10px 30px;
 }

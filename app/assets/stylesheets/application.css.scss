@@ -54,6 +54,19 @@ sup {
   font-size: 0.5em;
 }
 
+.text-page-header {
+  background-color: #eaeaea;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  a {
+    color: #3084bf;
+    text-decoration: underline;
+  }
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -192,4 +205,18 @@ img[alt=Help] {
 .tsh {
   text-shadow: 2px 2px 2px #333;
 }
+
+.fake-link {
+  color: #3084bf;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eaeaea;
+  width: 80%;
+  margin-left: 10%;
+}
+
 // fz01em fz08em fz12em etc
