@@ -1,9 +1,0 @@
-/* line 1, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-config.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 5, /Users/dannysantos/projects/EthicalSwitch/app/assets/stylesheets/OneFrameworkToRuleThemAll/one-config.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}

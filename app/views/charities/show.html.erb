@@ -1,8 +1,8 @@
 <section class="banner row flex-center mb0 banner_charity <%= "banner_#{@charity.filename}" %>">
   <div class="faded w100p tac pt15 pb15">
-    <h1 class="white-text">Make an Ethical <span class="yellow-text">Switch</span></h1>
+    <h1 class="white-text tsh1">Make an Ethical <span class="yellow-text">Switch</span></h1>
     
-    <p>
+    <p class="tsh1">
       And <%= @charity.name == "Healthy Futures" ? "a charity of your choice" : @charity.name %> 
       receive a donation!
       <%= image_tag "help.png", rel: "tooltip", title: 'We give over 90% of our profits to our charity partners! <br /> <span class="tooltip-tap">Tap to close</span>' %>
@@ -32,11 +32,12 @@
   </div>
 <% end %>
 
-<%= render 'statics/criteria' %>
 <%= render 'statics/switch_options', no_super: @charity.name == "Friends of the Earth" ? true : false %>
+<%= render 'statics/testimonials' %>
+<%= render 'statics/our_story' %>
 
 <div class="col-sm-10 col-sm-offset-1 tal mb40">
-  <h2 class="tac mb40">FAQs</h2>
+  <h2 class="tac mb40 mt40">FAQs</h2>
 
   <%= render @faqs %>
 
@@ -48,3 +49,4 @@
 </div>
 
 <div class="clb"></div>
+

@@ -3,7 +3,7 @@ class CharitiesController < ApplicationController
     @charity = Charity.find(params[:id])
     @charities = Charity.all.current
     assign_partner_variables
-    @faqs = Faq.all
+    @faqs = Tag.find_by(name: "Ethical Switch").faqs
     @switch = Switch.new
   end
 end

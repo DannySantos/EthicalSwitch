@@ -1,7 +1,7 @@
 <section id="switches" class="row tac mb40 por">
   <%= render 'statics/popups' %>
   
-  <div class="<%= no_super ? "col-sm-6" : "col-sm-4" %> p10">
+  <div id="popup_anchor" class="<%= no_super ? "col-sm-6" : "col-sm-4" %> p10">
     <div class="grey-padded">
       <h3>Switch your power provider</h3>
       
@@ -14,7 +14,7 @@
       <div class="clb"></div>
       
       <p class="mb10">
-        <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_power_button" %>
+        <%= link_to "Choose a Provider", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_power_button" %>
       </p>
       
       <p class="text-s">
@@ -39,7 +39,7 @@
         <div class="clb"></div>
 
         <p class="mb10">
-          <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_super_button" %>
+          <%= link_to "Choose a Provider", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_super_button" %>
         </p>
 
         <p class="text-s">
@@ -64,7 +64,7 @@
       <div class="clb"></div>
       
       <p class="mb10">
-        <%= link_to "START THE SWITCH", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_homeloans_button" %>
+        <%= link_to "Choose a Provider", "#popup_anchor", class: "btn btn-primary btn-padded popup_reveal", id: "switch_homeloans_button" %>
       </p>
       
       <p class="text-s">
