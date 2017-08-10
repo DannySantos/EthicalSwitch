@@ -6,6 +6,9 @@
       <li>Choose your new ethical provider</li>
       <li>Fill your name and email details</li>
       <li>Finish on your new providers website</li>
+      <% if controller_name == "charities" %>
+        <li class="text-success mt10">We make a donation to <%= @charity.name %>!</li>
+      <% end %>
     </ul>
   </div>
   

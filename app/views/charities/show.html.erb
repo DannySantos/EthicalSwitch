@@ -11,6 +11,8 @@
     <%= image_tag "charity_logo_#{@charity.filename}.jpg", class: "w100" %>
   </div>
 </section>
+
+<%= render 'statics/three_steps' %>
 	
 <% if @charity.name == "350" %>
   <div class="highlight-bg row tac">
@@ -30,32 +32,7 @@
   </div>
 <% end %>
 
-<div class="col-sm-8 col-sm-offset-2 tac mt40 mb40">
-  <h2 class="tac mb40">How it Works</h2>
-
-  <div class="col-sm-4">
-    <%= image_tag "icon_how_1.png" %>
-
-    <p>Choose one of our ethical products</p>
-  </div>
-
-  <div class="col-sm-4">
-    <%= image_tag "icon_how_2.png" %>
-
-    <p>Make the switch</p>
-  </div>
-
-  <div class="col-sm-4">
-    <%= image_tag "icon_how_3.png" %>
-
-    <p>We make a donation to <%= @charity.name == "Healthy Futures" ? "a charity of your choice" : @charity.name %> on your behalf!</p>
-  </div>
-
-  <div class="clb"></div>
-</div>
-
-<div class="clb"></div>
-
+<%= render 'statics/criteria' %>
 <%= render 'statics/switch_options', no_super: @charity.name == "Friends of the Earth" ? true : false %>
 
 <div class="col-sm-10 col-sm-offset-1 tal mb40">
@@ -71,5 +48,3 @@
 </div>
 
 <div class="clb"></div>
-
-<%= render 'statics/criteria' %>
