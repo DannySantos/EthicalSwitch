@@ -39,7 +39,7 @@ Rails.application.routes.draw do
 #  get "habitat", to: redirect("/charities/#{Charity.find_by(name: "Habitat for Humanity Australia").id}")
 #  get "ms", to: redirect("/charities/#{Charity.find_by(name: "MS Australia").id}")
 #  get "onemillionwomen", to: redirect("/charities/#{Charity.find_by(name: "1 Million Women").id}")
-  get "1millionwomen", to: redirect("/charities/#{Charity.find_by(name: "1 Million Women").id}")
+#  get "1millionwomen", to: redirect("/charities/#{Charity.find_by(name: "1 Million Women").id}")
   
   get "ethicalpower", to: redirect("/switches/ethical_power")
   get "ethical-power", to: redirect("/switches/ethical_power")
