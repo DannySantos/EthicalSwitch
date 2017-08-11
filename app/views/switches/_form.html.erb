@@ -1,35 +1,31 @@
 <%= form_for(Switch.new) do |f| %>
-  <div class="col-sm-8 col-sm-offset-2">
-    <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
-    <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
-    <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+  <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
+  <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
+  <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
 
-    <% if partner.industry == "homeloans" %>
-      <%= f.text_field :postcode, class: "form-control", placeholder: "Postcode" %>
-    <% else %>
-      <%= f.text_field :phone, class: "form-control", placeholder: "Phone" %>
-    <% end %>
+  <% if partner.industry == "homeloans" %>
+    <%= f.text_field :postcode, class: "form-control", placeholder: "Postcode" %>
+  <% else %>
+    <%= f.text_field :phone, class: "form-control", placeholder: "Phone" %>
+  <% end %>
 
-    <div class="tac mb20">
-      <p><strong>How did you hear about us?</strong></p>
+  <div class="tac mb20">
+    <p><strong>How did you hear about us?</strong></p>
 
-      <%= f.radio_button :referrer, 'facebook', checked: true, class: 'di' %> 
-      <%= f.label :referrer, "Facebook", class: 'di mr20' %>
+    <%= f.radio_button :referrer, 'facebook', checked: true, class: 'di' %> 
+    <%= f.label :referrer, "Facebook", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 'email', class: 'di' %>
-      <%= f.label :referrer, "Email", class: 'di mr20' %>
+    <%= f.radio_button :referrer, 'email', class: 'di' %>
+    <%= f.label :referrer, "Email", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 'charity', class: 'di' %>
-      <%= f.label :referrer, "Through a charity", class: 'di mr20' %>
+    <%= f.radio_button :referrer, 'charity', class: 'di' %>
+    <%= f.label :referrer, "Through a charity", class: 'di mr20' %>
 
-      <%= f.radio_button :referrer, 'other', class: 'di' %>
-      <%= f.label :referrer, "Other", class: 'di mr20' %>
-    </div>
+    <%= f.radio_button :referrer, 'other', class: 'di' %>
+    <%= f.label :referrer, "Other", class: 'di mr20' %>
   </div>
   
-  <div class="clb"></div>
-
-  <div id="charity-options" class="col-sm-10 col-sm-offset-1" style="display:none;">
+  <div id="charity-options" style="display:none;">
     <p class="tac"><strong>Tell us which of our charity partners you heard of us through and we'll give them a donation on your behalf!</strong></p>
     
     <p class="disclaimer tac">
@@ -55,6 +51,10 @@
   <%= f.hidden_field :charity_id, value: params[:charity_id] ? params[:charity_id] : nil %>
 
   <div class="tac">
-    <%= f.submit "SWITCH NOW", class: "btn btn-primary btn-padded" %>
+    <% if partner.industry == "homeloans" %>
+      <%= f.submit "Register Interest", class: "btn btn-primary btn-padded" %>
+    <% else %>
+      <%= f.submit "SWITCH NOW", class: "btn btn-primary btn-padded" %>
+    <% end %>
   </div>
 <% end %>

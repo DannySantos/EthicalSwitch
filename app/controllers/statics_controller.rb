@@ -1,6 +1,6 @@
 class StaticsController < ApplicationController
   def home
-    @charities = Charity.current.order("created_at DESC")
+    @charities = Charity.currently_live.order("created_at DESC")
     @switch = Switch.new
     @states = State.all
     

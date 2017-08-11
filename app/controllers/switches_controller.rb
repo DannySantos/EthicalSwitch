@@ -16,21 +16,21 @@ class SwitchesController < ApplicationController
   end
   
   def ethical_power
-    @charities = Charity.current.order("created_at DESC")
+    @charities = Charity.currently_live.order("created_at DESC")
     @faqs = Tag.find_by(name: "Ethical Power").faqs
     assign_partner_variables
     set_power_criteria(params[:state_id] || nil)
   end
   
   def ethical_super
-    @charities = Charity.current.order("created_at DESC")
+    @charities = Charity.currently_live.order("created_at DESC")
     @faqs = Tag.find_by(name: "Ethical Super").faqs
     assign_partner_variables
   end
   
   def ethical_homeloans
     @switch = Switch.new
-    @charities = Charity.current.order("created_at DESC")
+    @charities = Charity.currently_live.order("created_at DESC")
     @faqs = Tag.find_by(name: "Ethical Homeloans").faqs
     assign_partner_variables
   end
@@ -68,6 +68,6 @@ class SwitchesController < ApplicationController
     @switch = Switch.new
     @message = Message.new if @partner.name == "Powershop"
     @faqs = Faq.all
-    @charities = Charity.current
+    @charities = Charity.currently_live
   end
 end

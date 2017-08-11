@@ -1,7 +1,7 @@
 class Charity < ApplicationRecord
-  enum status: [:current, :expired]
+  enum status: [:currently_live, :expired]
   
-  scope :current, ->() { where(["status = ?", 0]) }
+  scope :currently_live, ->() { where(["status = ?", 0]) }
   
   def filename
     self.short_name.downcase.gsub(" ", "_")

@@ -16,9 +16,16 @@
 
 @import 'variables';
 
-html, body {
+html {
   font-family: "Open Sans", sans-serif;
   height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
 }
 
 h1, h2, h3, h4, h5 {
