@@ -8,6 +8,8 @@ class MessagesController < ApplicationController
     
     if @message.bill_comparison
       if @message.save
+        BillCompareMailer.bill_compare_email(@message).deliver_now
+        
         respond_to do |format|
           format.js
         end
@@ -16,6 +18,8 @@ class MessagesController < ApplicationController
       end
     else
       if @message.save
+        MessageMailer.new_message_email(@message).deliver_now
+        
         redirect_to root_path, notice: "Message sent"
       else
         render :new
