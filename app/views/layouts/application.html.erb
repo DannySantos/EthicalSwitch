@@ -18,6 +18,12 @@
 
   <body class="container-fluid">
     <div class="overlay" style="display:none;"></div>
+    
+    <% if current_user && current_user.admin %>
+      <nav id="admin" class="poa t0 r0">
+        <%= link_to "Admin Dashboard", admin_path, class: "btn btn-primary mt5 mr5"%>
+      </nav>
+    <% end %>
    
     <header class="primary row tac">
       <div class="col-sm-6 col-sm-offset-3">

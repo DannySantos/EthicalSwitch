@@ -21,6 +21,8 @@
   <%= f.hidden_field :bill_comparison, value: true if bill_compare %>
 
   <div class="tac">
-    <%= f.submit "Send", class: "btn btn-primary btn-padded" %>
+    <%= f.submit "Send", class: "btn btn-primary btn-padded message_send" %>
   </div>
 <% end %>
+
+<div id="message_error" class="error-text tac mt10"></div>

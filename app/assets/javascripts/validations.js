@@ -6,4 +6,12 @@ $(document).ready(function() {
       $('#subscriber_error').show();
     }
   })
+    
+  $(document.body).on('click', '.message_send', function(e) {
+    if($('#message_name').val() == "" || $('#message_postcode').val() == "" || $('#message_email').val() == "" || $('#message_message').val() == "") {
+      e.preventDefault();
+      $('#message_error').html("Please make sure you have filled the required fields");
+      $('#message_error').show();
+    }
+  })
 })
