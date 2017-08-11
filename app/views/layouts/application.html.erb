@@ -21,7 +21,7 @@
     
     <% if current_user && current_user.admin %>
       <nav id="admin" class="poa t0 r0">
-        <%= link_to "Admin Dashboard", admin_path, class: "btn btn-primary mt5 mr5"%>
+        <%= link_to "Admin Dashboard", admin_path, class: "btn btn-primary mt5 mr5 dn-sm"%>
       </nav>
     <% end %>
    
@@ -42,7 +42,7 @@
     
     <div class="clb"></div>
     
-    <footer class="primary row">
+    <footer class="primary row tac-sm">
       <div class="col-sm-5">
         &copy; Copyright <%= Date.new.strftime("%Y") %> Ethical Switch Pty Ltd | ABN: 71601309611
       </div>
