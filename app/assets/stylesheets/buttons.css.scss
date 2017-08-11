@@ -13,7 +13,23 @@
   background-color: #eaeaea;
 }
 
+.btn-status {
+  background-color: #eaeaea;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.btn-status:hover {
+  background-color: #c3c3c3;
+}
+
 .btn-grey-selected {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-grey-selected:hover {
   background-color: green;
   color: #fff;
 }

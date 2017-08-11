@@ -1,7 +1,15 @@
-<tr>
+<tr class="switcher_row_<%= switch.id %>">
   <td class="col-sm-2"><%= switch.first_name %> <%= switch.last_name %></td>
-  <td class="col-sm-3"><%= switch.email %></td>
+  <td class="col-sm-2"><%= switch.email %></td>
   <td class="col-sm-2"><%= switch.phone ? switch.phone : switch.postcode %></td>
-  <td class="col-sm-3"><%= switch.charity ? switch.charity.name : "None" %></td>
+  <td class="col-sm-2"><%= switch.charity ? switch.charity.name : "None" %></td>
   <td class="col-sm-2"><%= switch.partner.name %></td>
+  <td class="col-sm-2">
+    <% Switch.statuses.each do |status| %>
+      <%= form_for(switch, remote: true) do |f| %>
+        <%= f.hidden_field :status, value: status[0] %>
+        <%= f.submit "#{"Mark as"  unless status[0] == switch.status} #{status[0].capitalize}", class: "#{"btn-grey-selected" if status[0] == switch.status} btn btn-status" %>
+      <% end %>
+    <% end %>
+  </td>
 </tr>

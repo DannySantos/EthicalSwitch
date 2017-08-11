@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   resources :power_providers, only: [:index]
   resources :subscribers, only: [:create]
   
-  resources :switches, only: [:new, :create] do
+  resources :switches, only: [:new, :create, :update] do
     get 'ethical_power', on: :collection
     get 'ethical_super', on: :collection
     get 'ethical_homeloans', on: :collection

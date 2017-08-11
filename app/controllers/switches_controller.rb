@@ -15,6 +15,15 @@ class SwitchesController < ApplicationController
     end
   end
   
+  def update
+    @switch = Switch.find(params[:id])
+    @switch.update(switch_params)
+    
+    respond_to do |format|
+      format.js
+    end
+  end
+  
   def ethical_power
     @charities = Charity.currently_live.order("created_at DESC")
     @faqs = Tag.find_by(name: "Ethical Power").faqs
@@ -41,7 +50,7 @@ class SwitchesController < ApplicationController
   private
   
   def switch_params
-    params.require(:switch).permit(:first_name, :last_name, :email, :postcode, :phone, :referrer, :partner_id, :charity_id)
+    params.require(:switch).permit(:first_name, :last_name, :email, :postcode, :phone, :referrer, :partner_id, :charity_id, :status)
   end
   
   def get_redirect_path(switch)
