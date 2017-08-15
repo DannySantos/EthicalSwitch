@@ -8,7 +8,9 @@
   <div class="row">
     <main class="col-sm-8 col-sm-offset-2 pt20 pb40">
       <div class="col-sm-8 col-sm-offset-2 tac mb20">
-        <%= image_tag "partner_#{@partner.filename}_full.png" %>
+        <div class="col-sm-8 col-sm-offset-2">
+          <%= image_tag "partner_#{@partner.filename}_full.png", class: "w100p" %>
+        </div>
       </div>
       
       <div class="partner-banner row mb20">

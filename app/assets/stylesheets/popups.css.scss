@@ -21,6 +21,13 @@
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .popup {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+
 .close {
   display: block;
   height: 22px;

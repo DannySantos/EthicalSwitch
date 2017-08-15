@@ -28,12 +28,24 @@ body {
   padding-bottom: 6rem;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    padding-bottom: 200px;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
 h2 {
   font-size: 2.2em;
+}
+
+@media only screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.8em;
+  }
 }
 
 a {
@@ -227,6 +239,48 @@ hr {
   background-color: #eaeaea;
   width: 80%;
   margin-left: 10%;
+}
+
+.ml10p-sm {
+  margin-left: 10% !important;
+}
+
+.w20p-sm {
+  width: 20% !important;
+}
+
+.w40p-sm {
+  width: 40% !important;
+}
+
+.w50p-sm {
+  width: 50% !important;
+}
+
+.w80p-sm {
+  width: 80% !important;
+}
+
+.w60p-sm {
+  width: 60% !important;
+}
+
+.lhi {
+  line-height: initial !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .lhi-sm {
+    line-height: initial !important;
+  }
+  
+  .pi-sm {
+    padding: initial !important;
+  }
+  
+  .mi-sm {
+    margin: initial !important;
+  }
 }
 
 // fz01em fz08em fz12em etc

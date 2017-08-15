@@ -52,6 +52,12 @@
       background-color: $primary_color_highlight;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .btn-switch-icon {
+      font-size: 0.8em;
+    }
+  }
 }
 
 .banner-tall {

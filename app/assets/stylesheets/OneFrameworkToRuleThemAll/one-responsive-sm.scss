@@ -12,67 +12,67 @@
   }
 
   .fl-sm {
-    float:left;
+    float:left !important;
   }
 
   .fln-sm {
-    float:none;
+    float:none !important;
   }
 
   .fll-sm {
-    float:left;
+    float:left !important;
   }
 
   .flr-sm {
-    float:right;
+    float:right !important;
   }
 
   .cll-sm {
-    clear:left;
+    clear:left !important;
   }
 
   .clr-sm {
-    clear:right;
+    clear:right !important;
   }
 
   .clb-sm {
-    clear:both;
+    clear:both !important;
   }
 
   .vh-sm {
-    visibility:hidden;
+    visibility:hidden !important;
   }
 
   .ovv-sm {
-    overflow:visible;
+    overflow:visible !important;
   }
 
   .ovh-sm {
-    overflow:hidden;
+    overflow:hidden !important;
   }
 
   .ovs-sm {
-    overflow:scroll;
+    overflow:scroll !important;
   }
 
   .bxz-sm {
-    box-sizing:border-box;
+    box-sizing:border-box !important;
   }
 
   .vat-sm {
-    vertical-align:top;
+    vertical-align:top !important;
   }
 
   .vab-sm {
-    vertical-align:bottom;
+    vertical-align:bottom !important;
   }
 
   .vam-sm {
-    vertical-align: middle;
+    vertical-align: middle !important;
   }
 
   .bgszcv-sm {
-    background-size:cover;
+    background-size:cover !important;
   }
 
   .t0-sm {
@@ -125,6 +125,10 @@
 
   .w100p-sm {
     width: 100% !important;
+  }
+
+  .w20p-sm {
+    width: 20% !important;
   }
 
   .w50p-sm {
