@@ -1,6 +1,7 @@
 class SwitchesController < ApplicationController
   def new
     load_new_instance_variables(params[:partner_id])
+    redirect_to root_path if @partner.name == "Australian Ethical"
   end
   
   def create
@@ -65,8 +66,8 @@ class SwitchesController < ApplicationController
       "https://www.goodsuper.com.au/ethical-switch/?utm_campaign=#{switch.charity.filename if switch.charity}&first_name=#{@switch.first_name}&last_name=#{@switch.last_name}&email=#{@switch.email}#section-join-form";
     when "Future Super"
       "http://switch.myfuturesuper.com.au/ethical-switch?first_name=#{@switch.first_name}&last_name=#{@switch.last_name}&email=#{@switch.email}"
-    when "Australian Ethical"
-      "https://www.australianethical.com.au/super/join-form/?first_name=#{@switch.first_name}&last_name=#{@switch.last_name}&email=#{@switch.email}&c=ethical-switch";
+#    when "Australian Ethical"
+#      "https://www.australianethical.com.au/super/join-form/?first_name=#{@switch.first_name}&last_name=#{@switch.last_name}&email=#{@switch.email}&c=ethical-switch";
     when "Ethical Homeloans"
       homeloans_sent_switches_path
     end

@@ -22,11 +22,11 @@
   line: "Use your super to change the world. Join the Good Super movement. It's quick, simple &amp; rewarding."
 )
 
-@partner_aus_eth = Partner.find_or_create_by(
-  name: "Australian Ethical",
-  industry: 1,
-  line: "Join over 33,000 Australians who have chosen the super fund that’s good for the planet, people and animals."
-)
+#@partner_aus_eth = Partner.find_or_create_by(
+#  name: "Australian Ethical",
+#  industry: 1,
+#  line: "Join over 33,000 Australians who have chosen the super fund that’s good for the planet, people and animals."
+#)
 
 @partner_future_super = Partner.find_or_create_by(
   name: "Future Super",
