@@ -18,9 +18,9 @@ class ApplicationController < ActionController::Base
   def set_power_criteria(state_id)
     unless state_id.blank?
       @state = State.find(state_id)
-      @power_providers = @state.power_providers
+      @power_providers = @state.power_providers.order(:sorting_order)
     else
-      @power_providers = PowerProvider.all
+      @power_providers = PowerProvider.all.order(:sorting_order)
     end
   end
 end
