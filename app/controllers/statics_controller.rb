@@ -1,4 +1,6 @@
 class StaticsController < ApplicationController
+  skip_before_filter :redirect_to_placeholder, only: [:placeholder]
+
   def home
     @charities = Charity.currently_live.order("created_at DESC")
     @switch = Switch.new
@@ -24,5 +26,8 @@ class StaticsController < ApplicationController
     when "homeloan"
       redirect_to ethical_homeloans_switches_path(state_id: params[:state_id])
     end
+  end
+  
+  def placeholder
   end
 end

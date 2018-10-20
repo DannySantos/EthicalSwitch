@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :redirect_to_placeholder
+  
+  def redirect_to_placeholder
+    redirect_to placeholder_path
+  end
   
   def assign_partner_variables
     @powershop = Partner.find_by(name: "Powershop")

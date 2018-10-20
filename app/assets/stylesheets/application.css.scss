@@ -283,4 +283,21 @@ hr {
   }
 }
 
+.placeholder {
+  text-align: center;
+  background-color: #333;
+  color: #ffd000;
+  padding: 100px;
+  font-size: 1.2em;
+  
+  p {
+    max-width: 360px;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+
+
 // fz01em fz08em fz12em etc
+

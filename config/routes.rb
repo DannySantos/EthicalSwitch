@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/admin/subscribers', to: 'admin#subscribers'
   get '/admin/faqs', to: 'admin#faqs'
   get '/admin/new_faq', to: 'admin#new_faq'
+  get '/placeholder', to: 'statics#placeholder'
   post '/home_switch', to: 'statics#home_switch'
   post '/change_state', to: 'power_providers#change_state'
   
